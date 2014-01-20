@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>La Consulta</title>
+		<meta name="description" content="La Consulta Wines" />
+		<meta name="keywords" content="La Consulta, Vinos, Vino, Malbec, Mendoza, Argentina, Valle de Uco, San Martín" />
+
+		<link rel="shortcut icon" href="../favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>La Consulta</h3>
+			<a href="#">Historia</a>
+			<a href="#">Vinos</a>
+			<a href="#">360° Sustentable</a>
+			<a href="#">Enoturismo</a>
+			<a href="#">Contacto</a>
+		</nav>
+		<div class="container">
+			<header class="clearfix">
+				<span>Wines of Argentina</span>
+				<h1>La Consulta</h1>
+				<button id="showLeftPush">Show/Hide Left Push Menu</button>
+			</header>
+			<div class="main">
+				<section>
+				</section>
+			</div>
+		</div>
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	</body>
+</html>
