@@ -29,10 +29,21 @@
 				<h1>La Consulta</h1>
 				<button id="showLeftPush">Show/Hide Left Push Menu</button>
 			</header>
-			<div class="main">
-				<section>
+			<main>
+				<section id="inicio">
+					<video src=""></video>
+					inicio
 				</section>
-			</div>
+				<section id="historia">historia
+				</section>
+				<section id="vinos">vinos
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab, porro, asperiores dolorem hic qui eos voluptate veniam aspernatur consequuntur mollitia aliquid ipsa animi minus suscipit odit alias deserunt unde.</p>
+				</section>
+				<section id="tressesenta">tressesenta
+				</section>
+				<section id="enoturismo">enoturismo
+				</section>
+			</main>
 		</div>
 		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
@@ -40,15 +51,12 @@
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 				showLeftPush = document.getElementById( 'showLeftPush' ),
 				body = document.body;
-
-			
 			showLeftPush.onclick = function() {
 				classie.toggle( this, 'active' );
 				classie.toggle( body, 'cbp-spmenu-push-toright' );
 				classie.toggle( menuLeft, 'cbp-spmenu-open' );
 				disableOther( 'showLeftPush' );
 			};
-
 			function disableOther( button ) {
 				if( button !== 'showLeftPush' ) {
 					classie.toggle( showLeftPush, 'disabled' );
