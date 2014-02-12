@@ -23,45 +23,42 @@
 			<a href="#">Enoturismo</a>
 			<a href="#">Contacto</a>
 		</nav>
+		<header>
+			<span>Wines of Argentina</span>
+			<h1>La Consulta</h1>
+		</header>
 		<div class="container">
 			<header class="clearfix">
 				<span>Wines of Argentina</span>
 				<h1>La Consulta</h1>
-				<button id="showLeftPush">Show/Hide Left Push Menu</button>
 			</header>
+			<button id="showLeftPush">Show/Hide Left Push Menu</button>
 			<main>
 				<section id="inicio">
-					<video src=""></video>
-					inicio
+					<a id="video_background" href="#"></a>
+					<video id="video_inicio" preload="auto" muted="muted" volume="0">
+						<source src="video/video.mp4" type="video/mp4"> 
+					</video>
 				</section>
-				<section id="historia">historia
+				<section id="historia">
+					historia
 				</section>
-				<section id="vinos">vinos
+				<section id="vinos">
+					vinos
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab, porro, asperiores dolorem hic qui eos voluptate veniam aspernatur consequuntur mollitia aliquid ipsa animi minus suscipit odit alias deserunt unde.</p>
 				</section>
-				<section id="tressesenta">tressesenta
+				<section id="tressesenta">
+					tressesenta
 				</section>
-				<section id="enoturismo">enoturismo
+				<section id="enoturismo">
+					enoturismo
 				</section>
 			</main>
 		</div>
 		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="js/classie.js"></script>
-		<script>
-			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-				showLeftPush = document.getElementById( 'showLeftPush' ),
-				body = document.body;
-			showLeftPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toright' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-				disableOther( 'showLeftPush' );
-			};
-			function disableOther( button ) {
-				if( button !== 'showLeftPush' ) {
-					classie.toggle( showLeftPush, 'disabled' );
-				}
-			}
-		</script>
+		<script src="js/jquery.windows.js"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>
