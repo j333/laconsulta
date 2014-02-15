@@ -15,7 +15,7 @@
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body class="cbp-spmenu-push">
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left cl-effect" id="cbp-spmenu-s1">
 			<h3>La Consulta</h3>
 			<a href="#">Historia</a>
 			<a href="#">Vinos</a>
@@ -24,15 +24,19 @@
 			<a href="#">Contacto</a>
 		</nav>
 		<div class="container">
+            <button id="showLeftPush">Menu</button>
 			<header class="clearfix">
+                <video id="video_inicio" preload="auto" autoplay="true" loop="loop" muted volume="0">
+                    <source src="vid/inicio.mp4" type="video/mp4">
+                    <source src="vid/inicio.ogg" type="video/ogg">
+                    <source src="vid/inicio.webm" type="video/webm">
+                </video>
 				<span>Wines of Argentina</span>
 				<h1>La Consulta</h1>
-				<button id="showLeftPush">Show/Hide Left Push Menu</button>
 			</header>
-			<div class="main">
-				<section>
-				</section>
-			</div>
+            <section>
+                <p>Lorem impsu</p>
+            </section>
 		</div>
 		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
