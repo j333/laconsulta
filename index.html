@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
@@ -11,35 +11,39 @@
 
 		<link rel="shortcut icon" href="../favicon.ico">
 		
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,900,900italic' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body class="cbp-spmenu-push">
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-			<h3>La Consulta</h3>
-			<a href="#">Historia</a>
-			<a href="#">Vinos</a>
-			<a href="#">360° Sustentable</a>
-			<a href="#">Enoturismo</a>
-			<a href="#">Contacto</a>
+			<a id="btn_inicio" href=""><img src="img/isologo_laconsulta.gif" alt=""></a>
+			<a id="btn_historia" href="#">Historia</a>
+			<a id="btn_vinos" href="#">Vinos</a>
+			<a id="btn_tressesenta" href="#">360° Sustentable</a>
+			<a id="btn_enoturismo" href="#">Enoturismo</a>
+			<a id="btn_contacto" href="#">Contacto</a>
 
 			<ul class="redes">
-				<li><a href="" alt="Ir al perfil de La Consulta en Facebook"></a></li>
-				<li><a href="" alt="Ir al perfil de La Consulta en Google+"></a></li>
-				<li><a href="" alt="Ir al perfil de La Consulta en Twitter"></a></li>
+				<li><a href="" title="Ir al perfil de La Consulta en Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="" title="Ir al perfil de La Consulta en Google+"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="" title="Ir al perfil de La Consulta en Twitter"><i class="fa fa-twitter"></i></a></li>
 			</ul>
 		</nav>
 		<header>
-			<span>Wines of Argentina</span>
-			<h1>La Consulta</h1>
+			<!--span>Wines of Argentina</span>
+			<h1>La Consulta</h1-->
 		</header>
 		<div class="container">
 			<header class="clearfix">
-				<span>Wines of Argentina</span>
-				<h1>La Consulta</h1>
+				<!--span>Wines of Argentina</span>
+				<h1>La Consulta</h1-->
+				<img src="img/logo_laconsulta.gif" alt="">
 			</header>
-			<button id="showLeftPush">Menu</button>
+			<button id="showLeftPush"><i class="fa fa-bars"></i></button>
 			<main>
 				<section id="inicio">
 					<a id="video_background" href="#"></a>
@@ -47,84 +51,206 @@
 						<source src="video/inicio.mp4" type="video/mp4">
                         <source src="video/inicio.ogg" type="video/ogg">
                         <source src="video/inicio.webm" type="video/webm">
-                        
 					</video>
+					<a href="" class="detener_video"><i class="fa fa-stop"></i> Cerrar video</a>
 				</section>
 				<section id="historia">
-					historia
+					<div class="contenido">
+						<h1>Historia</h1>
+						<div class="col">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, natus obcaecati qui dolores amet porro ipsum consectetur animi voluptatibus quo. Magnam, quia voluptas dolores obcaecati nesciunt esse perferendis sed deleniti!</p>
+						</div>
+						<div class="col">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quidem, repudiandae iure inventore suscipit nulla ad nemo enim culpa velit? Nobis voluptatem temporibus officia laborum autem delectus sit illo at.</p>
+						</div>
+						<span class="clearboth"></span>
+					</div>
 				</section>
 				<section id="vinos">
-					<div id="reserva">
-						<img src="img/botella.jpg" alt="">
+					<div id="reserva" class="col">
+						<img src="img/La_Consulta_Reserva_CS.png" alt="">
 						<ul>
-							<li><a href="">Malbec</a></li>
-							<li><a href="">Cabernet Sauvignon</a></li>
-							<li><a href="">Cabernet Franc</a></li>
-							<li><a href="">Chardonnay</a></li>
-							<li><a href="">Torrontés</a></li>
-							<li><a href="">Rosé</a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Reserva_CH.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Reserva_CS.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Reserva_MB.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Reserva_TO.png" alt=""></a></li>
 						</ul>
-						<strong>La Consulta</strong>
+						<strong>Reserva</strong>
 						<a href="#"></a>
 						<div id="modal_reserva" class="modal">
 							<strong>modal reserva</strong>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptatum, itaque voluptate omnis repellendus reprehenderit recusandae adipisci. Esse, voluptatem harum aliquam aliquid at molestias quas minima ea. Ad, enim, sequi!</p>
-							<a href="#">cerrar</a>
+							<a class="cerrar_modal" href="#">Cerrar</a>
 						</div>
 					</div>
-					<div id="varietal">
-						<img src="img/botella.jpg" alt="">
+					<div id="varietal" class="col">
+						<img src="img/La_Consulta_Varietal_MB_tr.png" alt="">
 						<ul>
-							<li><a href="">Malbec</a></li>
-							<li><a href="">Cabernet Sauvignon</a></li>
-							<li><a href="">Cabernet Franc</a></li>
-							<li><a href="">Chardonnay</a></li>
-							<li><a href="">Torrontés</a></li>
-							<li><a href="">Rosé</a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Varietal_CH_tr.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Varietal_CS_tr.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Varietal_MB_tr.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Varietal_PG_tr.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Varietal_RO_tr.png" alt=""></a></li>
+							<li><a href=""><img src="img/thumbs/La_Consulta_Varietal_TO_tr.png" alt=""></a></li>
 						</ul>
-						<strong>La Consulta Reserva</strong>
+						<strong>Varietal</strong>
 						<a href=""></a>
 						<div id="modal_varietal" class="modal">
 							<strong>modal varietal</strong>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptatum, itaque voluptate omnis repellendus reprehenderit recusandae adipisci. Esse, voluptatem harum aliquam aliquid at molestias quas minima ea. Ad, enim, sequi!</p>
-							<a href="#">cerrar</a>
+							<a class="cerrar_modal" href="#">Cerrar</a>
 						</div>
 					</div>
 
 				</section>
 				<section id="tressesenta">
-					tressesenta
-				</section>
-				<section id="enoturismo">
-					enoturismo
-				</section>
-				<section id="contacto">
-					<div>
-						<h1>Contacto</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, eius, blanditiis adipisci delectus laborum itaque placeat earum quae inventore iure dolorum nemo culpa excepturi quam dolorem odit aut quasi maxime?</p>
+					<div class="contenido">
+						<h1>360 Sustentable</h1>
+						<img src="img/360_sustentable-660x234.jpg" alt="">
+						<div class="col">
+							<p><em>El legado de Eugenio Bustos son los valores y creencias culturales del paso de generaciones que se renuevan día a día y nos inspiran a trabajar con pasión y compromiso.</em></p>
+						</div>
+						<span class="clearboth"></span>
+						<div class="col">
+							<p>La Celia adhiere al compromiso 360º Sustentable desarrollado por VSPT Wine Group, el cual consiste en adoptar una gestión sustentable en todo nuestro actuar, preocupándonos por todos los públicos con los cuales interactuamos: comunidad, medio ambiente, trabajadores, clientes y consumidores, procurando que nuestras acciones presentes nos permitan prolongar nuestro trabajo en el futuro.</p>
+							<p>Integra la gestión de actividades claves para el éxito en una industria alimenticia: la satisfacción de los clientes y la calidad e inocuidad de los productos, mediante la mejora continua de los procesos.</p>
+							<p>Se complementan con el cuidado del medio ambiente y la promoción de la salud y seguridad de los trabajadores.</p>
+							<h2>Calidad</h2>
+							<p>A través de un análisis exhaustivo de cada una de las etapas productivas, desde la producción de las uvas hasta el despacho del producto terminado, controlamos los puntos críticos para garantizar la conformidad con los requisitos de las normas.</p>
+							<p>El Sistema Integrado de Gestión de La Celia, iniciado en el 2004, está conformado por normas internacionales, certificadas por Bureau Veritas y FLO-Cert:</p>
+							<ul>
+								<li>ISO 9001: Sistema de Gestión de Calidad.</li>
+								<li>ISO 22000: Sistema de Gestión de Inocuidad de los Alimentos.</li>
+								<li>ISO 14001: Sistema de Gestión Ambiental.</li>
+								<li>OHSAS 18001: Sistema de Gestión de Salud y Seguridad Ocupacional.</li>
+								<li>Criterios FAIRTRADE para trabajo contratado desde el año 2011</li>
+							</ul>
+							<h2>Responsabilidad social empresaria</h2>
+							<p>La gestión socialmente responsable que llevamos a cabo en La Celia se sostiene en tres pilares que, integrados, generan un valor agregado único:</p>
+							<ul>
+								<li>Valor Económico, permitiendo la continuidad de la Industria.</li>
+								<li>Valor Social, preservando el cuidado de los empleados y del entorno social</li>
+								<li>Valor Público, a través del respeto por el medio ambiente.</li>
+							</ul>
+							<p>Nuestra empresa interviene en diferentes acciones de Inversión Social desde el año 2005.</p>
+							<h2>Salud y seguridad</h2>
+							<p>La Celia es una empresa que depende de su gente para funcionar eficientemente. El camino que elegimos para crecer junto a nuestros trabajadores es seguir prácticas responsables y sustentables.</p>
+							<h2>Medio ambiente</h2>
+							<p>La responsabilidad sobre el cuidado de la naturaleza en La Celia es una forma de vida. Es uno de los pilares que guían la gestión diaria de quienes allí trabajamos. Algunas prácticas que llevamos adelante:</p>
+							<ul>
+								<li>Seguimiento de indicadores de gestión.</li>
+								<li>Programas para la reducción de consumo de energía eléctrica y agua.</li>
+								<li>Compostaje de residuos orgánicos provenientes de molienda y del mantenimiento de parques.</li>
+								<li>Uso de botellas ecológicas (reducción de peso).</li>
+								<li>Gestión de residuos (envases de agroquímicos, residuos peligrosos, basura electrónica).</li>
+								<li>Preservación de corredores biológicos (fauna & flora autóctonas).</li>
+							</ul>
+						</div>
+						<div class="col">
+							<h2>RSE</h2>
+							<h3>Guardería infantil</h3>
+							<p>Fue inaugurada para la Vendimia de 2006, funciona en el predio de la bodega y es solventada por la empresa. El objetivo es albergar a los hijos del personal permanente y temporario durante la cosecha. También está abierta a la comunidad en general y a los hijos del personal de fincas vecinas.</p>
+							<p>Allí 50 niños tienen la oportunidad de aprender y jugar, además de contar con alimentación y asistencia médica.</p>
+							<h3>Sede del Banco de Alimentos del Valle de Uco</h3>
+							<p>Desde La Celia se coordina el aporte de más de 20 empresas de la zona y se programa la distribución de los alimentos, además del intercambio de productos con otros bancos del país.</p>
+							<p>Este programa llega a más de 3000 beneficiarios; asiste a 50 instituciones, entre ellas, comedores infantiles, guarderías, hogares de niños y de ancianos.</p>
+							<h3>Viñedo escuela</h3>
+							<p>Es un proyecto que permite enseñar las diferentes técnicas de laboreo vinculadas a la producción de uva para vinificación, así como también la observación de las diferentes variedades. Es un cuartel de 3000 m2 que replica, a escala, las proporciones de las variedades cultivadas en la finca. Se encuentra en las cercanías de Posada La Celia, donde se reciben a los visitantes y clientes.</p>
+							<h3>Patrimonio histórico</h3>
+							<p>La Celia conserva en su bodega un patrimonio arquitectónico que data de 1890, donde conviven con la tecnología de punta y sus vinos de calidad y estándares internacionales.</p>
+							<p>La Posada funciona en la Casa Patronal construida en el año 1931; declarada en el año 2008, junto con la Bodega y el Viñedo, Patrimonio Histórico-Cultural dela Vitivinicultura Argentina. Conserva la estructura original manteniendo su calidez y simplicidad haciendo de ella un lugar único en el Valle de Uco.</p>
+						</div>
+						<span class="clearboth"></span>
 					</div>
-					<form action="">
-						<label for="nombre">
-							Nombre
-							<input type="text" name="nombre">
-						</label>
-						<label for="email">
-							Correo
-							<input type="email" name="email">
-						</label>
-						<label for="mensaje">
-							Mensaje
-							<textarea name="mensaje"></textarea>
-						</label>
-						<input type="submit" value="Enviar">
-					</form>
+				</section>
+				<span class="clearboth"></span>
+				<section id="enoturismo">
+					<div class="contenido">
+						<h1>Enoturismo</h1>
+						<img src="img/Fachada_posada-660x234.jpg" alt="">
+						<div class="col">
+							<h2>Posada la Celia</h2>
+							<p>Posada La Celia es una antigua casona del año 1931, declarada en 2008 junto con la Bodega y el Viñedo, Patrimonio Histórico-Cultural de la Vitivinicultura Argentina. Hoy es una cálida y exclusiva morada de campo, de sólo cinco habitaciones. Está equipada con lo necesario para ofrecer al huésped un descanso agradable en un lugar único como lo es el Valle de Uco.</p>
+							<p>A 100 kilómetros de la Ciudad de Mendoza, y rodeada de viñedos Posada La Celia invita a sus huéspedes a disfrutar del silencio y tranquilidad que acompañan al imponente paisaje de la Cordillera de los Andes. Elaboración de cortes de vinos, deporte aventura y otras actividades de recreación y relax son algunas de las propuestas para disfrutar en este paraje único.</p>
+							<p>Atesora una huerta de plantas aromáticas que abastece al restaurante y un viñedo escuela que replica a la finca, destinado a los visitantes.</p>
+							<p>Posee 5 habitaciones dobles ambientadas, con: Baño privado, Desayuno Buffet, Restaurante, Carta de sándwiches, Frigo Bar, TV satelital, Wi-Fi, Piscina descubierta, Bicicletas, Transfer desde Mendoza.</p>
+							<h2>Actividades</h2>
+							<h3>Almuerzos</h3>
+							<p>El restaurante de Posada La Celia, un lugar de deliciosos encuentros, ofrece un menú regional y otro gourmet, ambos de cuatro pasos, y desayuno buffet que combina ingredientes tanto regionales como internacionales y exquisitas tardes de té. Su atractiva especialidad es el asado a las llamas, en un almuerzo típico de campo al aire libre, junto a los jardines y viñedos. Siempre, en compañía de los mejores vinos de La Celia.</p>
+							<h3>Armá tu blend</h3>
+							<p>Junto a La Celia todo visitante puede vivir la Inolvidable experiencia de “Ser Enólogo por un Día”. La propuesta es tener la posibilidad, para muchos por primera vez, de armar un vino con las características deseadas por cada uno, asesorado por el enólogo de la bodega.</p>
+							<h3>Vendimia n los Viñedos de La Celia</h3>
+							<p>El momento más esperado en el ciclo de la vid. En compañía de guías especializados, se puede disfrutar de la Vendimia. Esta actividad es de día completo y finaliza con un almuerzo en la Posada. El programa incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Se realiza desde Marzo a Mayo.</p>
+							<h3>Poda en los viñedos de La Celia</h3>
+							<p>Labor clave que define la calidad del vino. Con esta propuesta las visitas pueden conocer los secretos de una Poda correcta y realizarla con sus propias manos. Actividad de medio día combinada con un almuerzo en la Posada. La actividad incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Disponible desde Julio a Septiembre.</p>
+							<h3>Desayunos y jornadas de trabajo para empresas</h3>
+							<p>Posada La Celia cuenta con los recursos tecnológicos necesarios (WiFi, Proyector y Sonido) para realizar reuniones empresariales. El atractivo es trabajar en un ámbito diferente, cálido y con atención personalizada según sus necesidades.</p>
+							<h3>Clase de cocina regional</h3>
+							<p>Una actividad muy divertida es la “Clase de Cocina Regional” en “El Chañar”. Con una especial vista a la cordillera, en medio de la tranquilidad de los viñedos, se puede aprender a elaborar panes y empanadas mendocinas. Acompañan estas clases excelentes vinos de La Celia.</p>
+							<h3>Wine shop</h3>
+							<p>Disponemos de una completa Sala de Ventas con los mejores vinos de La Celia. Así, todo turista y/o visitante puede llevarse vinos referentes del Valle de Uco por excelencia.</p>
+							<h3>Bicicleta por los viñedos</h3>
+							<p>Posada La Celia cuenta con bicicletas para recorrer sus cálidos viñedos y disfrutar de los maravillosos senderos de la finca. Permitiendo al turista descansar contemplando el atardecer en nuestro reservorio o bosque de chañares.</p>
+						</div>
+						<div class="col">
+							<form action="">
+								<legend>Reservas</legend>
+								<p>¿Planeas venir a visitarnos? Dinos cuándo y te buscaremos un lugar.</p>
+								<label for="">Nombre</label>
+								<input type="text">
+								<label for="">Email</label>
+								<input type="email">
+								<label for="">Fecha de llegada</label>
+								<input type="date">
+								<label for="">Fecha de partida</label>
+								<input type="date">
+								<label for="">Cantidad de personas</label>
+								<input type="number">
+								<label for="">Mensaje</label>
+								<textarea id="" name=""></textarea>
+								<input type="submit" value="Enviar">
+								<a class="btn" href="">Borrar</a>
+							</form>
+						</div>
+						<span class="clearboth"></span>
+					</div>
+				</section>
+				<span class="clearboth"></span>
+				<section id="contacto">
+					<div class="contenido">
+						<h1>Contacto</h1>
+						<div class="col">
+							<h2>Ubicación</h2>
+							<address>
+								<h3>Bodega</h3>
+								<p>Circunvalación Celia Bustos de Quiroga 374, Eugenio BustoAvda. San Martín 972, 3er piso, (5500) Ciudad, Mendoza, Argentina.s, (
+									<p></p>5569) San Carlos, Mendoza, Argentina.</p>
+								<p>T./F. +54 2622 4510 10/12</p>
+								<h3>Mendoza</h3>
+								<p>Avda. San Martín 972, 3er piso, (5500) Ciudad, Mendoza, Argentina.</p>
+								<p>T. +54 261 4134 400 / F. +54 261 4134 422</p>
+							</address>
+						</div>
+						<div class="col">
+							<form action="">
+								<label for="nombre">Nombre</label>
+								<input id="nombre" name="nombre" type="text" placeholder="Nombre Apellido">
+								<label for="email">Email</label>
+								<input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com">
+								<label for="mensaje">Mensaje</label>
+								<textarea id="mensaje" name="mensaje"></textarea>
+								<input type="submit" value="Enviar">
+							</form>
+						</div>
+						<span class="clearboth"></span>
+					</div>
 				</section>
 			</main>
 		</div>
 		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery-1.10.1.min.js"></script>
 		<script src="js/classie.js"></script>
-		<script src="js/jquery.windows.js"></script>
+		<!--script src="js/jquery.windows.js"></script-->
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

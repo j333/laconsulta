@@ -18,11 +18,51 @@ section,
 	display:block;
 }
 body{
-	font-family: arial, sans-serif;
+	font-family: 'Oswald', sans-serif;
+}
+nav{
+	text-align:center;
+	text-transform:uppercase;
+}
+section{
+	padding: 50px 20px 50px 100px;
+	min-height:100%;
+}
+section h1{
+	color:#e53b2c;
+	text-transform:uppercase;
+}
+section h2{
+	font-size:1.3em;
+}
+section p,
+input[type="text"],
+textarea{
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	font-size:14px;
+}
+ul{
+	list-style:none;
+	padding:0;
+}
+li{
+	margin:0;
+}
+img{
+	width:100%;
+}
+address{
+	font-style:normal;
+}
+a:hover,
+a:active,
+a:focus{
+  outline:0
 }
 /* General styles for all menus */
 .cbp-spmenu{
-	background: #000;
+	background: #fff;
 	position: fixed;
 }
 .cbp-spmenu h3{
@@ -34,17 +74,20 @@ body{
 }
 .cbp-spmenu a{
 	display: block;
-	color: #fff;
-	font-size: 1.1em;
-	font-weight: 300;
-	text-decoration: none;
+	color:#000;
+	font-size:1.1em;
+	font-weight:400;
+	text-decoration:none;
 }
 .cbp-spmenu a:hover{
-	background: #fff;
-	color: #000;
+	background:#000;
+	color:#fff;
 }
-.cbp-spmenu a:active{
-	font-weight: bold;
+#btn_inicio:hover{
+	background:#fff;
+}
+.seleccionado{
+	background:#999;
 }
 /* Orientation-dependent styles for the content of the menu */
 .cbp-spmenu-vertical{
@@ -85,12 +128,52 @@ header,
 	z-index:1000;
 }
 header{
-	background:green;
+	background:#000;
 	height:100%;
 	width:75px;
 }
-.container{
-	/*background:yellow;*/
+header img{
+	width:35px;
+	position:absolute;
+	bottom:20px;
+	left:17px;
+}
+nav img{
+	margin:10% auto;
+	width:30%;
+}
+#showLeftPush{
+	border:medium none;
+	width:50px;
+	height:50px;
+	font-size:30px;
+	background:transparent;
+	color:#fff;
+	margin:12px;
+}
+.redes{
+	position:absolute;
+	bottom:0;
+	right:50%;
+	margin-right:-70px;
+}
+.redes li{
+	float:left;
+	margin-left:12px;
+}
+.redes a{
+	display:block;
+	width:35px;
+	height:35px;
+	background:#000;
+	border-radius:100%;
+	padding:5px 0 0;
+}
+.redes i{
+	color:#fff;
+}
+#inicio{
+	padding:0;
 }
 #video_background{
 	cursor: url(../img/play.png), none;
@@ -117,27 +200,77 @@ header{
   	-o-background-size: cover;
   	background-size: cover;
 }
+.detener_video{
+	position:absolute;
+	background:rgba(255,255,255,.3);
+	color:rgba(255,255,255,.5);;
+	padding:10px;
+	top:10px;
+	right:10px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration:none;
+	transition:.5s ease;
+	display:none;
+	z-index:1000;
+}
+.detener_video:hover{
+	color:#000;
+	background:#fff;
+}
+.clearboth{
+	clear:both;
+	display:block;
+}
+.contenido{
+	width:100%;
+	max-width:800px;
+	margin:0 auto;
+}
+.col{
+	width:40%;
+	float:left;
+	position:relative;
+}
+#tressesenta span+.col,
+#enoturismo img+.col,
+.contenido h1+.col{
+	padding-right:20px;
+	width:60%;
+}
 #vinos{
-	background:red;
 	min-height:100%;
 }
+/*
 #vinos > div{
 	position:relative;
 	float:left;
 	width:50%;
 }
+*/
+#vinos .col{
+	width:47%;
+}
+#vinos .col:first-child{
+	margin-right:3%; 
+}
 #vinos > div img{
-	border:red solid thin;
 	height:100%;
+	width:auto;
 	display:block;
 }
 #vinos > div ul{
 	position:absolute;
 	bottom:20%;
 }
+#vinos li{
+	display:block;
+	margin-bottom:10px;
+	transition:.5s ease;
+}
 #vinos > div strong{
 	position:absolute;
-	bottom:10%;
+	bottom:5%;
+	font-size:3em;
 	text-transform:uppercase;
 }
 #vinos > div > a{
@@ -147,27 +280,30 @@ header{
 	height:80px;
 	background:yellow;
 }
+#vinos a img{
+	width:150px;
+}
 #reserva ul,
 #reserva strong{
-	left:50%;
+	right:35%;
 }
 #reserva > a{
 	left:20%;
 }
 #varietal ul,
 #varietal strong{
-	right:50%;
+	left:35%;
 }
 #varietal > a{
 	right:20%;
 }
-#reserva img,
+#reserva > img,
 #reserva strong,
 #reserva ul{
 	float:right;
 	display:block;
 }
-#varietal img,
+#varietal > img,
 #varietal strong,
 #varietal ul{
 	float:left;
@@ -179,12 +315,84 @@ header{
 	height:100%;
 	position:fixed;
 	top:0;
-	left:0;
 	z-index:1000;
 	display:none;
 }
-.clearboth{
-	clear:both;
+.cerrar_modal{
+	position:absolute;
+	width:50px;
+	height:50px;
+	display:block;
+	color:#fff;
+	top:10px;
+	right:70px;
+	font-size:2em;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+#modal_varietal{
+	width:52%;
+	background:#000;
+	left:0;
+}
+#modal_reserva{
+	width:48%;
+	background:#000;
+	right:0;
+}
+#contacto{
+	margin-bottom:100px;
+}
+form{
+	border:#999 solid thin;
+	padding:20px 10px;
+	margin-top:20px;
+	color:#000;
+}
+label,
+input,
+textarea{
+	width:100%;
+	box-shadow:none;
+	border-radius:0;
+	color:#000;
+}
+input,
+textarea{
+	border:#999 solid thin;
+	padding:5px 8px;
+	margin:5px 0 20px;
+}
+input:focus,
+textarea:focus{
+	border:#000 solid thin;
+}
+textarea{
+	height:150px;
+}
+input[type="submit"],
+.btn{
+	padding:10px;
+	width:80px;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	margin:0;
+	text-transform:uppercase;
+	background:#fff;
+	transition:.3s ease;
+	border:none;
+	background:#000;
+	color:#fff;
+}
+.btn{
+	color:#000;
+	background:#fff;
+	border:#000 solid thin;
+	text-decoration:none;
+}
+input[type="submit"]:hover{
+	background:#e53b2c;
+	color:#fff;
 }
 /* Example media queries */
 @media screen and (max-height: 26.375em){
