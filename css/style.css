@@ -19,6 +19,7 @@ section,
 }
 body{
 	font-family: 'Oswald', sans-serif;
+	background:#F9F9F9;
 }
 nav{
 	text-align:center;
@@ -27,6 +28,7 @@ nav{
 section{
 	padding: 50px 20px 50px 100px;
 	min-height:100%;
+	position:relative;
 }
 section h1{
 	color:#e53b2c;
@@ -34,6 +36,12 @@ section h1{
 }
 section h2{
 	font-size:1.3em;
+}
+h1,
+h2,
+h3,
+strong{
+	font-family: 'Oswald', sans-serif;
 }
 section p,
 input[type="text"],
@@ -207,7 +215,8 @@ nav img{
 	padding:10px;
 	top:10px;
 	right:10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
 	text-decoration:none;
 	transition:.5s ease;
 	display:none;
@@ -237,8 +246,22 @@ nav img{
 	padding-right:20px;
 	width:60%;
 }
+#historia{
+	height:auto;
+}
+#historia .back{
+	min-height:100%;
+	 min-width:1024px;
+	 width:100%;
+	 height:auto;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 opacity:.3;
+}
 #vinos{
 	min-height:100%;
+	background:#fff;
 }
 /*
 #vinos > div{
@@ -262,9 +285,23 @@ nav img{
 	position:absolute;
 	bottom:20%;
 }
+#vinos > div ul strong{
+	position:absolute;
+	display:block;
+	color:#E53B2C;
+	text-transform:uppercase;
+	font-size:24px;
+	opacity:0;
+	transition:.3s ease;
+}
+#reserva ul strong{
+	width:100%;
+	text-align:right;
+}
 #vinos li{
 	display:block;
 	margin-bottom:10px;
+	position:relative;
 	transition:.5s ease;
 }
 #vinos > div strong{
@@ -282,29 +319,37 @@ nav img{
 }
 #vinos a img{
 	width:150px;
+	transition:.3s ease;
+	transition-delay: .3s;
+}
+#vinos a:hover img{
+	opacity:.1;
+}
+#vinos a:hover strong{
+	opacity:1;
 }
 #reserva ul,
-#reserva strong{
+#reserva > strong{
 	right:35%;
 }
 #reserva > a{
 	left:20%;
 }
 #varietal ul,
-#varietal strong{
+#varietal > strong{
 	left:35%;
 }
 #varietal > a{
 	right:20%;
 }
 #reserva > img,
-#reserva strong,
+#reserva > strong,
 #reserva ul{
 	float:right;
 	display:block;
 }
 #varietal > img,
-#varietal strong,
+#varietal > strong,
 #varietal ul{
 	float:left;
 	display:block;
@@ -315,38 +360,65 @@ nav img{
 	height:100%;
 	position:fixed;
 	top:0;
+	left:0;
 	z-index:1000;
 	display:none;
+}
+.modal div{
+	padding:10% 5% 0;
+	height:100%;
+	background:#000;
+	position:absolute;
+	top:0;
+}
+.modal p{
+	color:#fff;
 }
 .cerrar_modal{
 	position:absolute;
 	width:50px;
 	height:50px;
 	display:block;
-	color:#fff;
+	color:#000;
 	top:10px;
 	right:70px;
 	font-size:2em;
 	text-decoration:none;
 	text-transform:uppercase;
 }
-#modal_varietal{
+/*#modal_varietal{
 	width:52%;
 	background:#000;
 	left:0;
+}*/
+#modal_varietal div{
+	width:52%;
+	left:0;
 }
-#modal_reserva{
+/*#modal_reserva{
 	width:48%;
 	background:#000;
 	right:0;
+}*/
+#modal_reserva div{
+	width:48%;
+	right:0;
+}
+#modal_reserva .cerrar_modal{
+	color:#fff;
+}#enoturismo{
+
+}
+#tressesenta{
+	
 }
 #contacto{
-	margin-bottom:100px;
+	height:auto;
+	padding-bottom:100px;
 }
 form{
 	border:#999 solid thin;
 	padding:20px 10px;
-	margin-top:20px;
 	color:#000;
 }
 label,

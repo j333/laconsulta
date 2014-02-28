@@ -94,22 +94,26 @@
                 }
             });
 
-            $('#reserva > a').click(function () {
+            $('#reserva ul a').click(function () {
                 $("#modal_reserva").fadeIn("slow");
+                $("html").css("overflow","hidden");
                 return false;
             });
             $('#modal_reserva > a').click(function () {
                 $("#modal_reserva").fadeOut("slow");
+                //$("html").css("overflow","auto");
 				$('html, body').animate({ scrollTop: $("#vinos").offset().top }, 0);
                 return false;
             });
 
-            $('#varietal > a').click(function () {
+            $('#varietal ul a').click(function () {
                 $("#modal_varietal").fadeIn("slow");
+                $("html").css("overflow","hidden");
                 return false;
             });
             $('#modal_varietal > a').click(function () {
                 $("#modal_varietal").fadeOut("slow");
+                //$("html").css("overflow","auto");
                 $('html, body').animate({ scrollTop: $("#vinos").offset().top }, 0);
                 return false;
             });
