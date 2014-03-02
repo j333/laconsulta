@@ -276,18 +276,32 @@ nav img{
 	margin:0 auto;
 }
 .col{
-	width:40%;
+	width:45%;
 	float:left;
 	position:relative;
 }
-#tressesenta span+.col,
-#enoturismo .contenido .col:first-child,
-.contenido h1+.col{
+.col-izq,
+#tressesenta .col-der{
+	width:40%;
+}
+#tressesenta .col-izq,
+#enoturismo .col-der,
+.contenido .col-der{
 	padding-right:20px;
 	width:60%;
 }
+#enoturismo .col-der{
+	padding-right:0;
+	padding-left:20px;
+}
 #historia{
 	height:auto;
+}
+#historia em{
+	margin-top:0;
+}
+#historia .contenido h1+.col{
+	margin-right:5%;
 }
 #historia .back{
 	min-height:100%;
@@ -452,12 +466,20 @@ nav img{
 #modal_reserva .cerrar_modal{
 	color:#fff;
 }
-#enoturismo{
+
+#enoturismo,
+#tressesenta{
 	padding-top:0;
 	padding-right:0;
 }
+#tressesenta header{
+	background: url(../img/360_byn.jpg) no-repeat center top;
+}
 #enoturismo header{
-    background: url(../img/laposada_byn.jpg) no-repeat center bottom; 
+	background: url(../img/laposada_byn.jpg) no-repeat center bottom;
+}
+#enoturismo header,
+#tressesenta header{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -467,21 +489,26 @@ nav img{
 	position:static;
 	padding-top:10px;
 }
-#enoturismo .col-der{
-    margin-top:-320px;
+#tressesenta .col-der,
+#enoturismo .col-izq{
+    margin-top:-310px;
 }
-#enoturismo .col-der div{
+#tressesenta .col-der div{
     padding:20px;
     margin-bottom:5px;
 }
-#enoturismo .col-der div strong{
+#tressesenta .col-der div strong{
 	font-size:1.8em;
 	font-family: 'Oswald', sans-serif;
 	font-weight:normal;
 }
-#enoturismo .col-der div,
+#tressesenta .col-der div,
 #enoturismo form{
     background:rgba(255,255,255,.8);
+}
+#enoturismo h1{
+	padding-left:40%;
+	margin-left:20px;
 }
 #enoturismo #actividades{
     width:100%;
@@ -491,14 +518,11 @@ nav img{
     width:50%;
     float:left;
     margin:0;
-    min-height:220px;
+    min-height:330px;
     padding-right:15px;
 }
-#tressesenta img{
-	position:absolute;
-	width:145%;
-	left:-50%;
-	top:0;
+#enoturismo #actividades img{
+    max-width:180px;
 }
 #contacto{
 	height:100%;
@@ -508,8 +532,8 @@ nav img{
 	background:#999;
 	color:#fff;
 }
-#contacto h1{
-	color:#000;
+#contacto em{
+	margin-top:0;
 }
 #contacto h2{
 	color:#fff;
@@ -540,6 +564,7 @@ textarea{
 	border:#E0E0E0 solid thin;
 	padding:5px 8px;
 	margin:5px 0 20px;
+	background:rgba(255,255,255,.5);
 }
 input:focus,
 textarea:focus{
