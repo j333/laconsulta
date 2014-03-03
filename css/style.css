@@ -634,6 +634,60 @@ input[type="submit"]:hover{
 		padding-left:40px;
 		padding-right:20px;
 	}
+	#vinos{
+		height:auto;
+	}
+	#vinos .col{
+		width:100%;
+		float:none;
+		padding-left:40px;
+	}
+	#vinos a{
+		text-decoration:none;
+	}
+	#vinos strong + img{
+		display:none;
+	}
+	#vinos li:hover,
+	#vinos li:active{
+		background:#000;
+	}
+	#vinos li:hover strong,
+	#vinos li:active strong{
+		color:#fff;
+	}
+	#vinos li a:hover img{
+		opacity:1;
+	}
+	#vinos li img{
+		float:left;
+		margin:0 20px 0 10px;
+	}
+	#vinos li{
+		margin:0;
+		width:90%;
+		display:block;
+		padding:20px 0;
+		border-bottom:#000 dotted thin;
+	}
+	#vinos ul li:last-child{
+		border-bottom:none;
+	}
+	#vinos > div strong,
+	#vinos > div ul strong,
+	#vinos > div ul{
+		position:static;
+		float:none;
+	}
+	#vinos > div ul strong{
+		opacity:1;
+	}
+	#reserva ul strong{
+		text-align:left;
+	}
+	#varietal{
+		margin-top:50px;
+	}
 }
 @media screen and (max-width: 640px){
 	#video_background{
