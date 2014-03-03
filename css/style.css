@@ -422,7 +422,10 @@ nav img{
 	z-index:1000;
 	display:none;
 }
-.modal div{
+.modal > img{
+	margin:0 20%;
+}
+.modal > div{
 	padding:10% 5% 0;
 	height:100%;
 	background:#000;
@@ -435,8 +438,6 @@ nav img{
 .cerrar_modal{
 	font-family: 'Oswald', sans-serif;
 	position:absolute;
-	width:50px;
-	height:50px;
 	display:block;
 	color:#000;
 	top:10px;
@@ -450,7 +451,10 @@ nav img{
 	background:#000;
 	left:0;
 }*/
-#modal_varietal div{
+.modal_varietal img{
+	float:right;
+}
+.modal_varietal > div{
 	width:52%;
 	left:0;
 }
@@ -459,11 +463,11 @@ nav img{
 	background:#000;
 	right:0;
 }*/
-#modal_reserva div{
+.modal_reserva > div{
 	width:48%;
 	right:0;
 }
-#modal_reserva .cerrar_modal{
+.modal_reserva .cerrar_modal{
 	color:#fff;
 }
 
@@ -565,6 +569,7 @@ textarea{
 	padding:5px 8px;
 	margin:5px 0 20px;
 	background:rgba(255,255,255,.5);
+	font-family:'Roboto',sans-serif;
 }
 input:focus,
 textarea:focus{
@@ -609,5 +614,65 @@ input[type="submit"]:hover{
 	}
 	.cbp-spmenu-push-toright{
 		left: 190px;
+	}
+}
+@media screen and (max-width: 900px){
+	.contenido{
+		padding-left:40px;
+		padding-right:20px;
+	}
+	#vinos .modal strong{
+		position:static;
+	}
+	#enoturismo #actividades li{
+		width:100%;
+		min-height:100%;
+	}
+}
+@media screen and (max-width: 768px){
+	.contenido{
+		padding-left:40px;
+		padding-right:20px;
+	}
+}
+@media screen and (max-width: 640px){
+	#video_background{
+		cursor:auto;
+	}
+	#tressesenta .col-izq,
+	#enoturismo .col-der,
+	.contenido .col-der,
+	#tressesenta .col-der,
+	.col-der,
+	.col-izq,
+	.col{
+	    width:100%;
+	}
+	#tressesenta .col-der,
+	#enoturismo .col-izq{
+		margin-top:0;
+	}
+	.modal > div{
+		padding:20px;
+	}
+	.cerrar_modal{
+		color:#fff;
+		position:static;
+		text-align:right;
+	}
+	#vinos .modal div img{
+		/*
+		float:none;
+		display:none;
+		*/
+		float:none;
+		width:50%;
+		margin:0 auto;
+		display:block;
+	}
+	.modal_varietal > div,
+	.modal_reserva > div{
+		width:100%;
+		text-align:center;
 	}
 }

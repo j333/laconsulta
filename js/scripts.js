@@ -3,8 +3,12 @@
 				var anchoVentana = $(window).width();
 				var altoVentana = $(window).height();
 
+                //poner botellas de vino al alto de la ventana
+
 				$("#vinos .col > img").css("height", altoVentana -100);
 
+                //funciones propias del plugin "window"
+                /*
                 var $windows = $('section');
                 $windows.windows({
                     snapping: true,
@@ -13,6 +17,38 @@
                     onScroll: function(s){},
                     onSnapComplete: function($el){},
                     onWindowEnter: function($el){}
+                });
+                */
+
+                if( anchoVentana < 640 ){
+                    $("#enoturismo .col-izq form").appendTo("#actividades");
+
+                    $(".modal").mCustomScrollbar({
+                        advanced:{
+                            updateOnContentResize: true
+                        }
+                    });
+                }
+
+                if( anchoVentana < 900 ){
+                    $(".modal > div").mCustomScrollbar({
+                        advanced:{
+                            updateOnContentResize: true
+                        }
+                    });
+                }
+
+                $('#video_background').click(function () {
+                    if(anchoVentana > 640){
+                        $(this).fadeOut("slow");             
+                        if ($("#video_inicio").get(0).paused) {
+                            $("#video_inicio").get(0).play();
+                            $(".detener_video").fadeIn("slow");   
+                        }
+                        else {
+                            $("#video_inicio").get(0).pause();
+                        }
+                    }
                 });
 
 			});
@@ -36,83 +72,73 @@
                     }, 1000);
                 });
 
+
                 $("#btn_historia").click(function() {
-                    $("nav a").removeClass("seleccionado");
+                    //$("nav a").removeClass("seleccionado");
                     $('html, body').animate({
                         scrollTop: $("#historia").offset().top
                     }, 1000,function(){
-                        $("#btn_historia").addClass("seleccionado");
+                        //$("#btn_historia").addClass("seleccionado");
                     });
                 });
 
                 $("#btn_vinos").click(function() {
-                    $("nav a").removeClass("seleccionado");
+                    //$("nav a").removeClass("seleccionado");
                     $('html, body').animate({
                         scrollTop: $("#vinos").offset().top
                     }, 1000,function(){
-                        $("#btn_vinos").addClass("seleccionado");
+                        //$("#btn_vinos").addClass("seleccionado");
                     });
                 });
 
                 $("#btn_tressesenta").click(function() {
-                    $("nav a").removeClass("seleccionado");
+                    //$("nav a").removeClass("seleccionado");
                     $('html, body').animate({
                         scrollTop: $("#tressesenta").offset().top
                     }, 1000,function(){
-                        $("#btn_tressesenta").addClass("seleccionado");
+                        //$("#btn_tressesenta").addClass("seleccionado");
                     });
                 });
 
                 $("#btn_enoturismo").click(function() {
-                    $("nav a").removeClass("seleccionado");
+                    //$("nav a").removeClass("seleccionado");
                     $('html, body').animate({
                         scrollTop: $("#enoturismo").offset().top
                     }, 1000,function(){
-                        $("#btn_enoturismo").addClass("seleccionado");
+                        //$("#btn_enoturismo").addClass("seleccionado");
                     });
                 });
 
                 $("#btn_contacto").click(function() {
-                    $("nav a").removeClass("seleccionado");
+                    //$("nav a").removeClass("seleccionado");
                     $('html, body').animate({
                         scrollTop: $("#contacto").offset().top
                     }, 1000,function(){
-                        $("#btn_contacto").addClass("seleccionado");
+                        //$("#btn_contacto").addClass("seleccionado");
                     });
                 });
 
 /***********************/
 
-			$('#video_background').click(function () {
-				$(this).fadeOut("slow");             
-                if ($("#video_inicio").get(0).paused) {
-                    $("#video_inicio").get(0).play();
-                    $(".detener_video").fadeIn("slow");   
-                }
-                else {
-                    $("#video_inicio").get(0).pause();
-                }
-            });
-
             $('#reserva ul a').click(function () {
-                $("#modal_reserva").fadeIn("slow");
+                $(".modal_reserva").fadeIn("slow");
                 $("html").css("overflow","hidden");
                 return false;
             });
-            $('#modal_reserva > a').click(function () {
-                $("#modal_reserva").fadeOut("slow");
+            $('.modal_reserva > a').click(function () {
+                $(".modal_reserva").fadeOut("slow");
                 //$("html").css("overflow","auto");
 				$('html, body').animate({ scrollTop: $("#vinos").offset().top }, 0);
                 return false;
             });
 
             $('#varietal ul a').click(function () {
-                $("#modal_varietal").fadeIn("slow");
+                $(".modal_varietal").fadeIn("slow");
                 $("html").css("overflow","hidden");
                 return false;
             });
-            $('#modal_varietal > a').click(function () {
-                $("#modal_varietal").fadeOut("slow");
+            $('.modal_varietal > a').click(function () {
+                $(".modal_varietal").fadeOut("slow");
                 //$("html").css("overflow","auto");
                 $('html, body').animate({ scrollTop: $("#vinos").offset().top }, 0);
                 return false;
