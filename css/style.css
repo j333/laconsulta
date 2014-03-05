@@ -16,6 +16,7 @@ main,
 	padding:0;
 	display:block;
 	font-size:.97em;
+    color:#aaa;
 }
 body{
 	font-family: 'Oswald', sans-serif;
@@ -38,9 +39,12 @@ section{
 	position:relative;
 }
 section h1{
-	color:#000;
-	text-transform:uppercase;
-	font-size:3em;
+	color: #000;
+    text-transform: uppercase;
+    font-size: 10em;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: .2em;
 }
 section h2{
 	font-size:1.3em;
@@ -63,7 +67,7 @@ h3+p{
 section p,
 input[type="text"],
 textarea{
-	font-weight:400;
+	font-weight:100;
 }
 ul{
 	list-style:none;
@@ -315,7 +319,7 @@ nav img{
 #vinos{
 	height:100%;
 	min-height:100%;
-	background:#fff;
+	/*background:#fff;*/
 }
 /*
 #vinos > div{
@@ -492,10 +496,10 @@ nav img{
 	position:static;
 	padding-top:10px;
 }
-#tressesenta .col-der,
+/*#tressesenta .col-der,
 #enoturismo .col-izq{
     margin-top:-310px;
-}
+}*/
 #tressesenta .col-der div{
     padding:20px;
     margin-bottom:5px;
@@ -509,10 +513,10 @@ nav img{
 #enoturismo form{
     background:rgba(255,255,255,.8);
 }
-#enoturismo h1{
+/*#enoturismo h1{
 	padding-left:40%;
 	margin-left:20px;
-}
+}*/
 #enoturismo #actividades{
     width:100%;
     padding-top:10px;
@@ -531,15 +535,14 @@ nav img{
 	height:100%;
 	height:auto;
 	padding-bottom:100px;
-	background:#CC3328;
-	background:#999;
-	color:#fff;
+	/*background:#ddd;*/
+	color:#000
 }
 #contacto em{
 	margin-top:0;
 }
 #contacto h2{
-	color:#fff;
+	/*color:#fff;*/
 }
 #contacto hr{
 	border-top:#fff dotted thin;
