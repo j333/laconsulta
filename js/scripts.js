@@ -51,6 +51,36 @@
                     }
                 });
 
+                $("#borrar_form").click(function(){
+                    $("#enoturismo input[type='text'],#enoturismo input[type='email'],#enoturismo input[type='date'],#enoturismo input[type='number']").val("");
+                    $("#enoturismo textarea").val("");
+                    return false;
+                });
+
+                $(".scroll_down").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#historia").offset().top
+                    }, 1000);
+                });
+
+                $("#enoturismo form input[type='submit']").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#enoturismo").offset().top
+                    }, 1000,function(){
+                        $("#enoturismo form legend,#enoturismo form label,#enoturismo form input,#enoturismo form textarea,#enoturismo form p,#borrar_form").fadeOut("slow",function(){
+                            $(".msj_reserva").fadeIn("slow");
+                        });
+                    });
+                    return false;
+                });
+
+                $("#otra_reserva").click(function(){
+                    $(".msj_reserva").fadeOut("slow",function(){
+                        $("#enoturismo form legend,#enoturismo form label,#enoturismo form input,#enoturismo form textarea,#enoturismo form p,#borrar_form").fadeIn("slow");
+                    });
+                    return false;
+                });
+
 			});
 
 //funcion que detecta si el video termino, y vuelve a verse la imagen de frente con fadeIn

@@ -66,6 +66,7 @@
                         <source src="video/inicio.webm" type="video/webm">
 					</video>
 					<a href="" class="detener_video"><i class="fa fa-stop"></i> Cerrar video</a>
+					<a href="#" class="scroll_down">Scroll Down <i class="fa fa-angle-down"></i></a>
 				</section>
 				<section id="historia">
 					<!-- <img class="back" src="img/batalla.jpg" alt=""> -->
@@ -194,7 +195,7 @@
 					<div class="contenido">
                         <em class="enfasis">Haciendo ecos de los valores del general San Martín trabajamos con pasión y compromiso en acciones sustentables.</em>
 						<div class="col col-izq">
-							<p>La Consulta adhiere al compromiso <a href="">360º Sustentable desarrollado por VSPT</a> Wine Group, el cual consiste en adoptar una gestión sustentable en todo nuestro actuar, preocupándonos por todos los públicos con los cuales interactuamos: comunidad, medio ambiente, trabajadores, clientes y consumidores, procurando que nuestras acciones presentes nos permitan prolongar nuestro trabajo en el futuro.</p>
+							<p>La Consulta adhiere al compromiso <a href="http://www.vspt.cl/sustentabilidad-360">360º Sustentable desarrollado por VSPT</a> Wine Group, el cual consiste en adoptar una gestión sustentable en todo nuestro actuar, preocupándonos por todos los públicos con los cuales interactuamos: comunidad, medio ambiente, trabajadores, clientes y consumidores, procurando que nuestras acciones presentes nos permitan prolongar nuestro trabajo en el futuro.</p>
                             <img src="img/360.jpg" alt="">
 							<p>Integra la gestión de actividades claves para el éxito en una industria alimenticia: la satisfacción de los clientes y la calidad e inocuidad de los productos, mediante la mejora continua de los procesos.</p>
 							<p>Se complementan con el cuidado del medio ambiente y la promoción de la salud y seguridad de los trabajadores.</p>
@@ -261,6 +262,11 @@
 					<div class="contenido">
 						<div class="col col-izq">
 							<form action="">
+								<div class="msj_reserva">
+									<strong>Gracias!</strong>
+									<span>Tu reserva ha sido enviada. Revisa tu correo para finalizar el registro.</span>
+									<a id="otra_reserva" class="btn" href="#">Hacer otra reserva</a>
+								</div>
 								<legend>Reservas</legend>
 								<p>¿Planeas venir a visitarnos? Dinos cuándo y te buscaremos un lugar.</p>
 								<label for="">Nombre</label>
@@ -276,7 +282,7 @@
 								<label for="">Mensaje</label>
 								<textarea id="" name=""></textarea>
 								<input type="submit" value="Enviar">
-								<a class="btn" href="">Borrar</a>
+								<a id="borrar_form" class="btn" href="">Borrar</a>
 							</form>
 						</div>
 						<div class="col col-der">
@@ -345,7 +351,7 @@
 						<h1>Contacto</h1>
 						<div class="col col-der">
 							<address>
-                                <em><strong>M.</strong> <a href="mailto:info@laconsultawines.com?Subject=Web" target="_top">info@laconsultawines.com</a></em>
+                                <p><em><strong>M.</strong> <a href="mailto:info@laconsultawines.com?Subject=Web" target="_top">info@laconsultawines.com</a></em></p>
 								<h2>Bodega</h2>
 								<p>Circunvalación Celia Bustos de Quiroga 374, Eugenio Bustos, (5569) San Carlos, Mendoza, Argentina.</p>
 								<p>T./F. +54 2622 4510 10/12</p>

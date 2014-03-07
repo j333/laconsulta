@@ -273,6 +273,28 @@ nav img{
 	color:#000;
 	background:#fff;
 }
+.scroll_down{
+	display:block;
+	position:absolute;
+	bottom:20px;
+	right:30px;
+	text-transform:uppercase;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+	width:50px;
+	font-size:12px;
+	line-height:14px;
+	transition:.5s ease;
+}
+.scroll_down:hover{
+	opacity:.25;
+}
+.scroll_down i{
+	display:block;
+	font-size:64px;
+	line-height:32px;
+}
 .contenido{
 	width:100%;
 	max-width:800px;
@@ -495,6 +517,21 @@ nav img{
 #enoturismo form{
     background:rgba(255,255,255,.8);
 }
+#enoturismo form strong{
+    font-size:1.8em;
+    font-family: 'Oswald',sans-serif;
+}
+#otra_reserva{
+	display:block;
+	margin-top:10px;
+	width:150px;
+}
+.msj_reserva{
+	display:none;
+}
+.msj_reserva strong{
+	display:block;
+}
 /*#enoturismo h1{
 	padding-left:40%;
 	margin-left:20px;
@@ -576,7 +613,7 @@ input[type="submit"],
 	text-transform:uppercase;
 	background:#fff;
 	transition:.3s ease;
-	border:none;
+	border:#000 solid thin;
 	background:#000;
 	color:#fff;
 }
@@ -588,6 +625,7 @@ input[type="submit"],
 }
 input[type="submit"]:hover{
 	background:#e53b2c;
+	border-color:#e53b2c;
 	color:#fff;
 }
 .enfasis{
@@ -619,6 +657,9 @@ input[type="submit"]:hover{
 	}
 }
 @media screen and (max-width: 768px){
+	section h1{
+		font-size:7em;
+	}
 	.contenido{
 		padding-left:40px;
 		padding-right:20px;
@@ -679,6 +720,9 @@ input[type="submit"]:hover{
 	}
 }
 @media screen and (max-width: 640px){
+	section h1{
+		font-size:3.5em;
+	}
 	#video_background{
 		cursor:auto;
 	}
