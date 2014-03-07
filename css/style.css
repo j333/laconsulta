@@ -230,9 +230,6 @@ nav img{
 	padding:0;
 	height:100%;
 }
-#video_background{
-	cursor: url(../img/play.png), none;
-}
 #video_inicio{
 	position:absolute;
 	bottom:0px;
@@ -336,6 +333,19 @@ nav img{
 	 position:absolute;
 	 top:0;
 	 left:0;
+}
+.video_responsive{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+.video_responsive iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
 }
 #vinos{
 	height:100%;
