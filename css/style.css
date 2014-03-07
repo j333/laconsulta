@@ -315,7 +315,7 @@ nav img{
 	margin:0 auto;
 }
 .col{
-	width:45%;
+	width:48%;
 	float:left;
 	position:relative;
 }
@@ -340,7 +340,7 @@ nav img{
 	margin-top:0;
 }
 #historia .contenido .enfasis+.col{
-	margin-right:5%;
+	margin-right:4%;
 }
 #historia .back{
 	min-height:100%;
@@ -355,7 +355,8 @@ nav img{
 	overflow:hidden;
 	padding-bottom:56.25%;
 	position:relative;
-	height:0;
+    float: left;
+    width: 100%;
 }
 .video_responsive iframe{
 	left:0;
