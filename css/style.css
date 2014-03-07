@@ -230,6 +230,23 @@ nav img{
 	padding:0;
 	height:100%;
 }
+#play_ini{
+	display:block;
+	width:400px;
+	height:400px;
+	background:url(../img/play_ini.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position:absolute;
+	right:50%;
+	top:50%;
+	margin-right:-200px;
+	margin-top:-200px;
+	opacity:.5;
+}
+#play_ini:hover{
+	opacity:.8;
+}
 #video_inicio{
 	position:absolute;
 	bottom:0px;
@@ -726,6 +743,9 @@ input[type="submit"]:hover{
 @media screen and (max-width: 640px){
 	section h1{
 		font-size:3.5em;
+	}
+	#play_ini{
+		display:none;
 	}
 	#video_background{
 		cursor:auto;

@@ -38,9 +38,10 @@
                     });
                 }
 
-                $('#video_background').click(function () {
+                $('#play_ini').click(function () {
                     if(anchoVentana > 640){
-                        $(this).fadeOut("slow");             
+                        $(this).fadeOut("slow");
+                        $("#video_background").fadeOut("slow");
                         if ($("#video_inicio").get(0).paused) {
                             $("#video_inicio").get(0).play();
                             $(".detener_video").fadeIn("slow");   
@@ -85,7 +86,8 @@
 
 //funcion que detecta si el video termino, y vuelve a verse la imagen de frente con fadeIn
                 $("#video_inicio").bind("ended", function() {
-                    $('#video_background').fadeIn("slow");
+                    $('#play_ini').fadeIn("slow");
+                    $("#video_background").fadeIn("slow");
                     $(".detener_video").fadeOut();
                 });
 
