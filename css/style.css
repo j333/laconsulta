@@ -796,6 +796,15 @@ input[type="submit"]:hover,
 		position:static;
 		text-align:right;
 	}
+	#vinos li img{
+		float:none;
+		margin-bottom:20px;
+		margin-left:10px;
+		display:block;
+	}
+	#vinos li strong{
+		margin-left:10px;
+	}
 	#vinos .modal div img{
 		/*
 		float:none;
