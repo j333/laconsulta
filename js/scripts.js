@@ -38,6 +38,18 @@
                     });
                 }
 
+                $("#a_modal_enoturismo").click(function(){
+                    $("#modal_enoturismo").show();
+                    $("html").css("overflow","hidden");
+                    return false;
+                });
+
+                $("#modal_enoturismo .cerrar_modal").click(function(){
+                    $("#modal_enoturismo").hide();
+                    $("html").css("overflow","auto");
+                    return false;
+                });
+
                 $('#play_ini').click(function () {
                     if(anchoVentana > 640){
                         $(this).fadeOut("slow");
