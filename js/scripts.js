@@ -44,7 +44,7 @@
                     return false;
                 });
 
-                $("#modal_enoturismo .cerrar_modal").click(function(){
+                $("#modal_enoturismo .cerrar_modal,.section_modal").click(function(){
                     $("#modal_enoturismo").hide();
                     $("html").css("overflow","auto");
                     return false;
