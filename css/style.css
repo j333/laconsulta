@@ -221,7 +221,14 @@ nav img{
 	height:35px;
 	background:#000;
 	border-radius:100%;
+	border:#000 solid thin;
 	padding:5px 0 0;
+}
+.redes a:hover{
+	background:#fff;
+}
+.redes a:hover i{
+	color:#000;
 }
 .redes i{
 	color:#fff;
@@ -655,7 +662,6 @@ input[type="submit"]:hover{
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
 }
-/* Example media queries */
 @media screen and (max-height: 26.375em){
 	.cbp-spmenu-vertical{
 		font-size: 90%;
