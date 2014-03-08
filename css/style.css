@@ -633,6 +633,7 @@ textarea{
 	height:150px;
 }
 input[type="submit"],
+#check .btn,
 .btn{
 	padding:10px;
 	width:80px;
@@ -645,6 +646,7 @@ input[type="submit"],
 	border:#000 solid thin;
 	background:#000;
 	color:#fff;
+	text-decoration:none;
 }
 .btn{
 	color:#000;
@@ -652,7 +654,8 @@ input[type="submit"],
 	border:#000 solid thin;
 	text-decoration:none;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover,
+#check .btn:hover{
 	background:#e53b2c;
 	border-color:#e53b2c;
 	color:#fff;
@@ -661,6 +664,21 @@ input[type="submit"]:hover{
     font-size: 3em;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
+}
+/*check*/
+#check{
+	text-align:center;
+}
+#check main{
+	padding:0;
+}
+#check img{
+	width:100%;
+	max-width:120px;
+}
+#check h1{
+	font-size:7em;
+	margin-top:.3em;
 }
 @media screen and (max-height: 26.375em){
 	.cbp-spmenu-vertical{
