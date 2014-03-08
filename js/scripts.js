@@ -66,7 +66,7 @@
 
                 $("#enoturismo form input[type='submit']").click(function(){
                     $('html, body').animate({
-                        scrollTop: $("#enoturismo").offset().top
+                        scrollTop: $("#enoturismo form").offset().top
                     }, 1000,function(){
                         $("#enoturismo form legend,#enoturismo form label,#enoturismo form input,#enoturismo form textarea,#enoturismo form p,#borrar_form").fadeOut("slow",function(){
                             $(".msj_reserva").fadeIn("slow");
