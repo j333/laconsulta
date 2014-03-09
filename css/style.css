@@ -966,12 +966,14 @@ input[type="submit"]:hover,
 			transform: translateX(100px) rotateY(90deg);
 	-webkit-transition:all .5s ease-in-out;
 			transition:all .5s ease-in-out;
-	-webkit-transition-delay: .3s;
-			transition-delay: .3s;
+	-webkit-transition-delay: 0s;
+			transition-delay: 0s;
 }
 #vinos > div li:hover strong{
 	-webkit-transform: translateX(0px) rotateY(0deg);
 			transform: translateX(0px) rotateY(0deg);
+	-webkit-transition-delay: .3s;
+			transition-delay: .3s;
 }
 
 /*************/
@@ -993,10 +995,12 @@ input[type="submit"]:hover,
 			transform: translateX(-100px) rotateY(-90deg);
 	-webkit-transition:all .5s ease-in-out;
 			transition:all .5s ease-in-out;
-	-webkit-transition-delay: .3s;
-			transition-delay: .3s;
+	-webkit-transition-delay: 0s;
+			transition-delay: 0s;
 }
 #vinos #varietal li:hover strong{
 	-webkit-transform: translateX(5px) rotateY(0deg);
 			transform: translateX(5px) rotateY(0deg);
+	-webkit-transition-delay: .3s;
+			transition-delay: .3s;
 }
