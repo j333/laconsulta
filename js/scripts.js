@@ -94,6 +94,10 @@
                     return false;
                 });
 
+                $("#mostrar_vinos").hover(function(){
+                    $("#reserva > img").addClass("vino_move_class");
+                });
+
 			});
 
 //funcion que detecta si el video termino, y vuelve a verse la imagen de frente con fadeIn

@@ -402,14 +402,27 @@ nav img{
 	position:absolute;
 	bottom:20%;
 }
+#vinos > div ul a{
+	display:block;
+	width:250px;
+	text-align:right;
+}
+#vinos #varietal ul a{
+	text-align:left;
+}
 #vinos > div ul strong{
 	position:absolute;
+	width:100%;
 	display:block;
 	color:#E53B2C;
 	text-transform:uppercase;
 	font-size:24px;
-	opacity:0;
-	transition:.3s ease;
+	/*opacity:0;
+	display:none;
+	transition:.3s ease;*/
+}
+#vinos > div ul img{
+	display:inline;
 }
 #reserva ul strong{
 	width:100%;
@@ -429,15 +442,19 @@ nav img{
 }
 #vinos a img{
 	width:150px;
+	/*
 	transition:.3s ease;
 	transition-delay: .3s;
+	*/
 }
+/*
 #vinos a:hover img{
 	opacity:.1;
 }
 #vinos a:hover strong{
 	opacity:1;
 }
+*/
 #reserva ul,
 #reserva > strong{
 	right:35%;
@@ -894,4 +911,92 @@ input[type="submit"]:hover,
 		width:100%;
 		text-align:center;
 	}
+}
+
+#mostrar_vinos{
+	display:block;
+	position:absolute;
+	width:60px;
+	height:60px;
+	top:0;
+	left:100px;
+	background:yellow;
+}
+
+#reserva > img{
+	opacity:0;
+	-webkit-transform: translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+			transform: translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+			transition:all .5s ease-in-out;
+}
+
+#varietal > img{
+	opacity:0;
+	-webkit-transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+			transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+			transition:all .5s ease-in-out;
+}
+
+#vinos:hover #reserva > img{
+	opacity:1;
+	-webkit-transform: translateX(-10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			transform: translateX(-10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+#vinos:hover #varietal > img{
+	opacity:1;
+	-webkit-transform: translateX(10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			transform: translateX(10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+
+#vinos > div ul img{
+	-webkit-transform: translateX(0px) rotateY(0deg);
+			transform: translateX(0px) rotateY(0deg);
+	-webkit-transition:all .5s ease-in-out;			
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: .2s;
+			transition-delay: .2s;
+}
+#vinos > div li:hover img{
+	-webkit-transform: translateX(-50px) rotateY(90deg);
+			transform: translateX(-50px) rotateY(90deg);
+}
+#vinos > div ul strong{
+	-webkit-transform: translateX(100px) rotateY(90deg);
+			transform: translateX(100px) rotateY(90deg);
+	-webkit-transition:all .5s ease-in-out;
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: .3s;
+			transition-delay: .3s;
+}
+#vinos > div li:hover strong{
+	-webkit-transform: translateX(0px) rotateY(0deg);
+			transform: translateX(0px) rotateY(0deg);
+}
+
+/*************/
+
+#vinos #varietal ul img{
+	-webkit-transform: translateX(0px) rotateY(0deg);
+			transform: translateX(0px) rotateY(0deg);
+	-webkit-transition:all .5s ease-in-out;			
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: .2s;
+			transition-delay: .2s;
+}
+#vinos #varietal li:hover img{
+	-webkit-transform: translateX(50px) rotateY(-90deg);
+			transform: translateX(50px) rotateY(-90deg);
+}
+#vinos #varietal ul strong{
+	-webkit-transform: translateX(-100px) rotateY(-90deg);
+			transform: translateX(-100px) rotateY(-90deg);
+	-webkit-transition:all .5s ease-in-out;
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: .3s;
+			transition-delay: .3s;
+}
+#vinos #varietal li:hover strong{
+	-webkit-transform: translateX(5px) rotateY(0deg);
+			transform: translateX(5px) rotateY(0deg);
 }
