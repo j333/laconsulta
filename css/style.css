@@ -734,6 +734,7 @@ input[type="submit"]:hover,
 	background:#fff;
 	padding:20px 30px 20px 20px;
 	left:50%;
+    margin: 30px;
 	margin-left:-300px;
 }
 .section_modal h2{
