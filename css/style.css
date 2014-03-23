@@ -763,6 +763,13 @@ input[type="submit"]:hover,
 #check main{
 	padding:0;
 }
+#check .contenido{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-230px;
+	margin-left:-400px;
+}
 #check img{
 	width:100%;
 	max-width:120px;
@@ -771,6 +778,10 @@ input[type="submit"]:hover,
 	font-size:7em;
 	margin-top:.3em;
 	color:#fff;
+}
+#check .btn{
+	font-size:1.8em;
+	padding:15px 30px;
 }
 @media screen and (max-height: 26.375em){
 	.cbp-spmenu-vertical{
@@ -792,6 +803,20 @@ input[type="submit"]:hover,
 	#enoturismo #actividades li{
 		width:100%;
 		min-height:100%;
+	}
+	#check .contenido{
+		position:static;
+		margin:auto;
+	}
+	#check h1{
+		font-size:4em;
+	}
+	.enfasis,
+	#check .btn{
+		font-size:1.7em;
+	}
+	#check .btn{
+		padding:10px 20px;
 	}
 }
 @media screen and (max-width: 768px){
