@@ -27,18 +27,55 @@
 
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-		<link rel="stylesheet" href="css/style.css" />
+		<!--link rel="stylesheet" href="css/style.css" /-->
+
+		<style>
+			.no_hover{
+				-webkit-filter: blur(2px); 
+			    -moz-filter: blur(2px); 
+			    filter: blur(2px); 
+				filter:url(#blur-effect);
+				-ms-transform: scale(.9);
+				-webkit-transform: scale(.9);
+				transform: scale(.9);
+			}
+
+.section_modal{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:black;
+	top:0;
+	left:0;
+}
+.section_modal > div{
+	width:90%;
+	/*
+	position:absolute;
+	*/
+	max-width:600px !important;
+	background:#fff;
+	padding:20px 30px 20px 20px;
+    margin: 30px;
+    left:50%;
+	margin-left:-300px;
+	background:#fff;
+}
+#modal_enoturismo{
+	/*display:none;*/
+}
+		</style>
 
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body class="cbp-spmenu-push">
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 			<a id="btn_inicio" href=""><img src="img/isologo_laconsulta.gif" alt=""></a>
-			<a id="btn_historia" href="#">Origen</a>
-			<a id="btn_vinos" href="#">Vinos</a>
-			<a id="btn_tressesenta" href="#">360° Sustentable</a>
-			<a id="btn_enoturismo" href="#">Enoturismo</a>
-			<a id="btn_contacto" href="#">Contacto</a>
+			<a id="btn_historia" href="">Origen</a>
+			<a id="btn_vinos" href="">Vinos</a>
+			<a id="btn_tressesenta" href="">360° Sustentable</a>
+			<a id="btn_enoturismo" href="">Enoturismo</a>
+			<a id="btn_contacto" href="">Contacto</a>
 
 			<ul class="redes">
 				<li><a href="https://www.facebook.com/laconsultawines" title="Ir al perfil de La Consulta en Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -55,15 +92,15 @@
 			<main>
 
 				<section id="inicio">
-					<a id="play_ini" href="#"></a>
+					<a id="play_ini" href=""></a>
 					<div id="video_background" href="#"></div>
-					<!--<video id="video_inicio" preload="auto" volume="0">
+					<video id="video_inicio" preload="auto" volume="0">
 						<source src="video/inicio.mp4" type="video/mp4">
                         <source src="video/inicio.ogg" type="video/ogg">
                         <source src="video/inicio.webm" type="video/webm">
-					</video>-->
+					</video>
 					<a href="" class="detener_video"><i class="fa fa-stop"></i> Cerrar video</a>
-					<a href="#" class="scroll_down">Scroll Down <i class="fa fa-angle-down"></i></a>
+					<a href="" class="scroll_down">Scroll Down <i class="fa fa-angle-down"></i></a>
 				</section>
 
 				<section id="historia">
@@ -191,6 +228,12 @@
 						</div>
 					</div>
 
+					<svg>
+					    <filter id="blur-effect">
+					        <feGaussianBlur stdDeviation="2" />
+					    </filter>
+					</svg>
+
 				</section>
 
 				<section id="tressesenta">
@@ -286,7 +329,7 @@
 							<p>Atesora una huerta de plantas aromáticas que abastece al restaurante y un viñedo escuela que replica a la finca, destinado a los visitantes.</p>
 							<p>Posee 5 habitaciones dobles ambientadas, con: Baño privado, Desayuno Buffet, Restaurante, Carta de sándwiches, Frigo Bar, TV satelital, Wi-Fi, Piscina descubierta, Bicicletas, Transfer desde Mendoza.</p>
 							<!--boton para prueba modal-->
-							<a id="a_modal_enoturismo" href="#">
+							<a id="a_modal_enoturismo" href="">
 								<strong>Actividades</strong>
 								<img src="img/byn.jpg" alt="">
 							</a>
@@ -297,98 +340,51 @@
 								<a class="cerrar_modal" href="">x</a>
 								<h2>Actividades</h2>
 								<ul>
-								<li>
-									<img src="img/comida.png" alt="">
-									<h3>Almuerzos</h3>
-									<p>El restaurante de Posada La Celia, un lugar de deliciosos encuentros, ofrece un menú regional y otro gourmet, ambos de cuatro pasos, y desayuno buffet que combina ingredientes tanto regionales como internacionales y exquisitas tardes de té. Su atractiva especialidad es el asado a las llamas, en un almuerzo típico de campo al aire libre, junto a los jardines y viñedos. Siempre, en compañía de los mejores vinos de La Consulta.</p>
-								</li>
-								<li>
-									<img src="img/cata.png" alt="">
-									<h3>Armá tu blend</h3>
-									<p>Junto a La Consulta todo visitante puede vivir la Inolvidable experiencia de “Ser Enólogo por un Día”. La propuesta es tener la posibilidad, para muchos por primera vez, de armar un vino con las características deseadas por cada uno, asesorado por el enólogo de la bodega.</p>
-								</li>
-								<li>
-									<img src="img/vendimia.png" alt="">
-									<h3>Vendimia en los Viñedos de La Consulta</h3>
-									<p>El momento más esperado en el ciclo de la vid. En compañía de guías especializados, se puede disfrutar de la Vendimia. Esta actividad es de día completo y finaliza con un almuerzo en la Posada. El programa incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Se realiza desde Marzo a Mayo.</p>
-								</li>
-								<li>
-									<img src="img/poda.png" alt="">
-									<h3>Poda en los viñedos de La Consulta</h3>
-									<p>Labor clave que define la calidad del vino. Con esta propuesta las visitas pueden conocer los secretos de una Poda correcta y realizarla con sus propias manos. Actividad de medio día combinada con un almuerzo en la Posada. La actividad incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Disponible desde Julio a Septiembre.</p>
-								</li>
-								<li>
-									<img src="img/reuniones.png" alt="">
-									<h3>Desayunos y jornadas de trabajo para empresas</h3>
-									<p>Posada La Celia cuenta con los recursos tecnológicos necesarios (WiFi, Proyector y Sonido) para realizar reuniones empresariales. El atractivo es trabajar en un ámbito diferente, cálido y con atención personalizada según sus necesidades.</p>
-								</li>
-								<li>
-									<img src="img/cocina.png" alt="">
-									<h3>Clase de cocina regional</h3>
-									<p>Una actividad muy divertida es la “Clase de Cocina Regional” en “El Chañar”. Con una especial vista a la cordillera, en medio de la tranquilidad de los viñedos, se puede aprender a elaborar panes y empanadas mendocinas. Acompañan estas clases excelentes vinos de La Consulta.</p>
-								</li>
-								<li>
-									<img src="img/regalos.png" alt="">
-									<h3>Wine shop</h3>
-									<p>Disponemos de una completa Sala de Ventas con los mejores vinos de La Consulta. Así, todo turista y/o visitante puede llevarse vinos referentes del Valle de Uco por excelencia.</p>
-								</li>
-								<li>
-									<img src="img/bicicleta.png" alt="">
-									<h3>Bicicleta por los viñedos</h3>
-									<p>Posada La Celia cuenta con bicicletas para recorrer sus cálidos viñedos y disfrutar de los maravillosos senderos de la finca. Permitiendo al turista descansar contemplando el atardecer en nuestro reservorio o bosque de chañares.</p>	
-								</li>
-								<span class="clearboth"></span>
-							</ul>
+									<li>
+										<img src="img/comida.png" alt="">
+										<h3>Almuerzos</h3>
+										<p>El restaurante de Posada La Celia, un lugar de deliciosos encuentros, ofrece un menú regional y otro gourmet, ambos de cuatro pasos, y desayuno buffet que combina ingredientes tanto regionales como internacionales y exquisitas tardes de té. Su atractiva especialidad es el asado a las llamas, en un almuerzo típico de campo al aire libre, junto a los jardines y viñedos. Siempre, en compañía de los mejores vinos de La Consulta.</p>
+									</li>
+									<li>
+										<img src="img/cata.png" alt="">
+										<h3>Armá tu blend</h3>
+										<p>Junto a La Consulta todo visitante puede vivir la Inolvidable experiencia de “Ser Enólogo por un Día”. La propuesta es tener la posibilidad, para muchos por primera vez, de armar un vino con las características deseadas por cada uno, asesorado por el enólogo de la bodega.</p>
+									</li>
+									<li>
+										<img src="img/vendimia.png" alt="">
+										<h3>Vendimia en los Viñedos de La Consulta</h3>
+										<p>El momento más esperado en el ciclo de la vid. En compañía de guías especializados, se puede disfrutar de la Vendimia. Esta actividad es de día completo y finaliza con un almuerzo en la Posada. El programa incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Se realiza desde Marzo a Mayo.</p>
+									</li>
+									<li>
+										<img src="img/poda.png" alt="">
+										<h3>Poda en los viñedos de La Consulta</h3>
+										<p>Labor clave que define la calidad del vino. Con esta propuesta las visitas pueden conocer los secretos de una Poda correcta y realizarla con sus propias manos. Actividad de medio día combinada con un almuerzo en la Posada. La actividad incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Disponible desde Julio a Septiembre.</p>
+									</li>
+									<li>
+										<img src="img/reuniones.png" alt="">
+										<h3>Desayunos y jornadas de trabajo para empresas</h3>
+										<p>Posada La Celia cuenta con los recursos tecnológicos necesarios (WiFi, Proyector y Sonido) para realizar reuniones empresariales. El atractivo es trabajar en un ámbito diferente, cálido y con atención personalizada según sus necesidades.</p>
+									</li>
+									<li>
+										<img src="img/cocina.png" alt="">
+										<h3>Clase de cocina regional</h3>
+										<p>Una actividad muy divertida es la “Clase de Cocina Regional” en “El Chañar”. Con una especial vista a la cordillera, en medio de la tranquilidad de los viñedos, se puede aprender a elaborar panes y empanadas mendocinas. Acompañan estas clases excelentes vinos de La Consulta.</p>
+									</li>
+									<li>
+										<img src="img/regalos.png" alt="">
+										<h3>Wine shop</h3>
+										<p>Disponemos de una completa Sala de Ventas con los mejores vinos de La Consulta. Así, todo turista y/o visitante puede llevarse vinos referentes del Valle de Uco por excelencia.</p>
+									</li>
+									<li>
+										<img src="img/bicicleta.png" alt="">
+										<h3>Bicicleta por los viñedos</h3>
+										<p>Posada La Celia cuenta con bicicletas para recorrer sus cálidos viñedos y disfrutar de los maravillosos senderos de la finca. Permitiendo al turista descansar contemplando el atardecer en nuestro reservorio o bosque de chañares.</p>	
+									</li>
+									<span class="clearboth"></span>
+								</ul>
 							</div>
 						</div>
 						<span class="clearboth"></span>
-						<!--hr>
-						<div id="actividades">
-							<h2>Actividades</h2>
-							<ul>
-								<li>
-									<img src="img/comida.png" alt="">
-									<h3>Almuerzos</h3>
-									<p>El restaurante de Posada La Celia, un lugar de deliciosos encuentros, ofrece un menú regional y otro gourmet, ambos de cuatro pasos, y desayuno buffet que combina ingredientes tanto regionales como internacionales y exquisitas tardes de té. Su atractiva especialidad es el asado a las llamas, en un almuerzo típico de campo al aire libre, junto a los jardines y viñedos. Siempre, en compañía de los mejores vinos de La Consulta.</p>
-								</li>
-								<li>
-									<img src="img/cata.png" alt="">
-									<h3>Armá tu blend</h3>
-									<p>Junto a La Consulta todo visitante puede vivir la Inolvidable experiencia de “Ser Enólogo por un Día”. La propuesta es tener la posibilidad, para muchos por primera vez, de armar un vino con las características deseadas por cada uno, asesorado por el enólogo de la bodega.</p>
-								</li>
-								<li>
-									<img src="img/vendimia.png" alt="">
-									<h3>Vendimia en los Viñedos de La Consulta</h3>
-									<p>El momento más esperado en el ciclo de la vid. En compañía de guías especializados, se puede disfrutar de la Vendimia. Esta actividad es de día completo y finaliza con un almuerzo en la Posada. El programa incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Se realiza desde Marzo a Mayo.</p>
-								</li>
-								<li>
-									<img src="img/poda.png" alt="">
-									<h3>Poda en los viñedos de La Consulta</h3>
-									<p>Labor clave que define la calidad del vino. Con esta propuesta las visitas pueden conocer los secretos de una Poda correcta y realizarla con sus propias manos. Actividad de medio día combinada con un almuerzo en la Posada. La actividad incluye: tijera, guantes, bandeja, charla de seguridad, seguros, visita a bodega y degustación. Disponible desde Julio a Septiembre.</p>
-								</li>
-								<li>
-									<img src="img/reuniones.png" alt="">
-									<h3>Desayunos y jornadas de trabajo para empresas</h3>
-									<p>Posada La Celia cuenta con los recursos tecnológicos necesarios (WiFi, Proyector y Sonido) para realizar reuniones empresariales. El atractivo es trabajar en un ámbito diferente, cálido y con atención personalizada según sus necesidades.</p>
-								</li>
-								<li>
-									<img src="img/cocina.png" alt="">
-									<h3>Clase de cocina regional</h3>
-									<p>Una actividad muy divertida es la “Clase de Cocina Regional” en “El Chañar”. Con una especial vista a la cordillera, en medio de la tranquilidad de los viñedos, se puede aprender a elaborar panes y empanadas mendocinas. Acompañan estas clases excelentes vinos de La Consulta.</p>
-								</li>
-								<li>
-									<img src="img/regalos.png" alt="">
-									<h3>Wine shop</h3>
-									<p>Disponemos de una completa Sala de Ventas con los mejores vinos de La Consulta. Así, todo turista y/o visitante puede llevarse vinos referentes del Valle de Uco por excelencia.</p>
-								</li>
-								<li>
-									<img src="img/bicicleta.png" alt="">
-									<h3>Bicicleta por los viñedos</h3>
-									<p>Posada La Celia cuenta con bicicletas para recorrer sus cálidos viñedos y disfrutar de los maravillosos senderos de la finca. Permitiendo al turista descansar contemplando el atardecer en nuestro reservorio o bosque de chañares.</p>	
-								</li>
-								<span class="clearboth"></span>
-							</ul>
-						</div-->
 					</div>
 				</section>
 
@@ -429,9 +425,12 @@
 		</div>
 		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/jquery-1.10.1.min.js"></script>
-		<script src="js/classie.js"></script>
-		<!--script src="js/jquery.windows.js"></script-->
+		<!--script src="js/classie.js"></script>
+		<script src="js/jquery.windows.js"></script-->
 		<script src="js/jquery.mCustomScrollbar.min.js"></script>
-		<script src="js/scripts.js"></script>
+		<!--script src="js/scripts.js"></script-->
+		<script>
+			$("#modal_enoturismo").mCustomScrollbar();
+		</script>
 	</body>
 </html>

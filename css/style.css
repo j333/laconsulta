@@ -33,7 +33,6 @@ main{
 	padding-left:70px;
 }
 section{
-	/*padding: 50px 20px 100px 100px;*/
 	padding: 50px 0 100px 0;
 	min-height:100%;
 	position:relative;
@@ -102,7 +101,6 @@ p a{
 p a:hover{
 	text-decoration:underline;
 }
-/* General styles for all menus */
 .cbp-spmenu{
 	background: #fff;
 	position: fixed;
@@ -131,7 +129,6 @@ p a:hover{
 .seleccionado{
 	background:#999;
 }
-/* Orientation-dependent styles for the content of the menu */
 .cbp-spmenu-vertical{
 	width: 240px;
 	height: 100%;
@@ -141,14 +138,12 @@ p a:hover{
 .cbp-spmenu-vertical a{
 	padding: .7em 20px;
 }
-/* Vertical menu that slides from the left or right */
 .cbp-spmenu-left{
 	left: -240px;
 }
 .cbp-spmenu-left.cbp-spmenu-open{
 	left: 0px;
 }
-/* Push classes applied to the body */
 .cbp-spmenu-push{
 	overflow-x: hidden;
 	position: relative;
@@ -157,7 +152,6 @@ p a:hover{
 .cbp-spmenu-push-toright{
 	left: 240px;
 }
-/* Transitions */
 .cbp-spmenu,
 .cbp-spmenu-push{
 	-webkit-transition: all 0.3s ease;
@@ -375,17 +369,19 @@ nav img{
 #vinos{
 	height:100%;
 	min-height:100%;
-	/*background:#fff;*/
 }
-/*
-#vinos > div{
-	position:relative;
-	float:left;
-	width:50%;
-}
-*/
 #vinos .col{
 	width:47%;
+	transition:.5s ease;
+}
+#varietal,
+#reserva{
+	/*
+	-webkit-filter: blur(0); 
+    -moz-filter: blur(0); 
+    filter: blur(0);
+	transition:.5s ease;
+	*/
 }
 #vinos .col:first-child{
 	margin-right:3%; 
@@ -417,9 +413,6 @@ nav img{
 	color:#E53B2C;
 	text-transform:uppercase;
 	font-size:24px;
-	/*opacity:0;
-	display:none;
-	transition:.3s ease;*/
 }
 #vinos > div ul img{
 	display:inline;
@@ -442,19 +435,7 @@ nav img{
 }
 #vinos a img{
 	width:150px;
-	/*
-	transition:.3s ease;
-	transition-delay: .3s;
-	*/
 }
-/*
-#vinos a:hover img{
-	opacity:.1;
-}
-#vinos a:hover strong{
-	opacity:1;
-}
-*/
 #reserva ul,
 #reserva > strong{
 	right:35%;
@@ -515,11 +496,6 @@ nav img{
 	text-decoration:none;
 	text-transform:uppercase;
 }
-/*#modal_varietal{
-	width:52%;
-	background:#000;
-	left:0;
-}*/
 .modal_varietal img{
 	float:right;
 }
@@ -527,11 +503,6 @@ nav img{
 	width:52%;
 	left:0;
 }
-/*#modal_reserva{
-	width:48%;
-	background:#000;
-	right:0;
-}*/
 .modal_reserva > div{
 	width:48%;
 	right:0;
@@ -546,10 +517,6 @@ nav img{
 	padding-top:0;
 	padding-right:0;
 }
-/*#tressesenta .col-der,
-#enoturismo .col-izq{
-    margin-top:-310px;
-}*/
 #tressesenta .col-der div{
     padding:20px;
     margin-bottom:5px;
@@ -578,10 +545,6 @@ nav img{
 .msj_reserva strong{
 	display:block;
 }
-/*#enoturismo h1{
-	padding-left:40%;
-	margin-left:20px;
-}*/
 #enoturismo #actividades{
     width:100%;
     padding-top:10px;
@@ -600,14 +563,10 @@ nav img{
 	height:100%;
 	height:auto;
 	padding-bottom:100px;
-	/*background:#ddd;*/
 	color:#000
 }
 #contacto em{
 	margin-top:0;
-}
-#contacto h2{
-	/*color:#fff;*/
 }
 #contacto hr{
 	border-top:#fff dotted thin;
@@ -616,7 +575,6 @@ form{
 	background:#fff;
 	padding:20px;
 	color:#000;
-	/**/
 }
 legend{
 	font-size:1.8em;
@@ -713,6 +671,16 @@ input[type="submit"]:hover,
 	background:rgba(0,0,0,.8);
     text-align:center;
 }
+.section_modal > div{
+	width:90%;
+	position:absolute;
+	max-width:600px;
+	background:#fff;
+	padding:20px 30px 20px 20px;
+	left:50%;
+    margin: 30px;
+	margin-left:-300px;
+}
 .section_modal .cerrar_modal{
 	right:20px;
 	width:40px;
@@ -726,16 +694,6 @@ input[type="submit"]:hover,
 .section_modal .cerrar_modal:hover{
 	background:#000;
 	color:#fff;
-}
-.section_modal div{
-	width:90%;
-	position:absolute;
-	max-width:600px;
-	background:#fff;
-	padding:20px 30px 20px 20px;
-	left:50%;
-    margin: 30px;
-	margin-left:-300px;
 }
 .section_modal h2{
 	font-size: 5em;
@@ -754,7 +712,7 @@ input[type="submit"]:hover,
 #modal_enoturismo{
 	display:none;
 }
-/*check*/
+
 #check{
 	text-align:center;
 	background:url(../img/back_other.jpg);
@@ -778,6 +736,9 @@ input[type="submit"]:hover,
 	font-size:7em;
 	margin-top:.3em;
 	color:#fff;
+}
+#check .enfasis{
+	margin:-10px 0 40px;
 }
 #check .btn{
 	font-size:1.8em;
@@ -923,10 +884,6 @@ input[type="submit"]:hover,
 		margin-left:10px;
 	}
 	#vinos .modal div img{
-		/*
-		float:none;
-		display:none;
-		*/
 		float:none;
 		width:50%;
 		margin:0 auto;
@@ -948,32 +905,6 @@ input[type="submit"]:hover,
 	left:100px;
 	background:yellow;
 }
-
-#reserva > img{
-	opacity:0;
-	-webkit-transform: translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
-			transform: translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
-			transition:all .5s ease-in-out;
-}
-
-#varietal > img{
-	opacity:0;
-	-webkit-transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
-			transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
-			transition:all .5s ease-in-out;
-}
-
-#vinos:hover #reserva > img{
-	opacity:1;
-	-webkit-transform: translateX(-10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-			transform: translateX(-10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-#vinos:hover #varietal > img{
-	opacity:1;
-	-webkit-transform: translateX(10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-			transform: translateX(10px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-
 
 #vinos > div ul img{
 	-webkit-transform: translateX(0px) rotateY(0deg);
@@ -1001,8 +932,6 @@ input[type="submit"]:hover,
 	-webkit-transition-delay: .3s;
 			transition-delay: .3s;
 }
-
-/*************/
 
 #vinos #varietal ul img{
 	-webkit-transform: translateX(0px) rotateY(0deg);

@@ -7,46 +7,38 @@
 
 				$("#vinos .col > img").css("height", altoVentana -100);
 
-                //funciones propias del plugin "window"
+                //agregar clase blur al hacer hover y quitar al hacer mouse leave
                 /*
-                var $windows = $('section');
-                $windows.windows({
-                    snapping: true,
-                    snapSpeed: 500,
-                    snapInterval: 1100,
-                    onScroll: function(s){},
-                    onSnapComplete: function($el){},
-                    onWindowEnter: function($el){}
+                $("#reserva").hover(function(){
+                    $("#varietal").addClass("no_hover");
                 });
+                $("#reserva").mouseleave(function(){
+                    $("#varietal").removeClass("no_hover");
+                });
+                $("#varietal").hover(function(){
+                    $("#reserva").addClass("no_hover");
+                });
+                $("#varietal").mouseleave(function(){
+                    $("#reserva").removeClass("no_hover");
+                });
+                
                 */
 
                 if( anchoVentana < 640 ){
-                    $("#enoturismo .col-izq form").appendTo("#actividades");
-
-                    $(".modal").mCustomScrollbar({
-                        advanced:{
-                            updateOnContentResize: true
-                        }
-                    });
+                    //$("#enoturismo .col-izq form").appendTo("#actividades");
                 }
 
-                if( anchoVentana < 900 ){
-                    $(".modal > div").mCustomScrollbar({
-                        advanced:{
-                            updateOnContentResize: true
-                        }
-                    });
-                }
+                //$(".section_modal").mCustomScrollbar();
 
                 $("#a_modal_enoturismo").click(function(){
                     $("#modal_enoturismo").show();
-                    $("html").css("overflow","hidden");
+                    $("body").css("overflow","hidden");
                     return false;
                 });
 
                 $("#modal_enoturismo .cerrar_modal,.section_modal").click(function(){
                     $("#modal_enoturismo").hide();
-                    $("html").css("overflow","auto");
+                    $("body").css("overflow","auto");
                     return false;
                 });
 
@@ -56,12 +48,13 @@
                         $("#video_background").fadeOut("slow");
                         if ($("#video_inicio").get(0).paused) {
                             $("#video_inicio").get(0).play();
-                            $(".detener_video").fadeIn("slow");   
+                            $(".detener_video").fadeIn("slow");
                         }
                         else {
                             $("#video_inicio").get(0).pause();
                         }
                     }
+                    return false;
                 });
 
                 $("#borrar_form").click(function(){
@@ -74,6 +67,7 @@
                     $('html, body').animate({
                         scrollTop: $("#historia").offset().top
                     }, 1000);
+                    return false;
                 });
 
                 $("#enoturismo form input[type='submit']").click(function(){
@@ -94,10 +88,6 @@
                     return false;
                 });
 
-                $("#mostrar_vinos").hover(function(){
-                    $("#reserva > img").addClass("vino_move_class");
-                });
-
 			});
 
 //funcion que detecta si el video termino, y vuelve a verse la imagen de frente con fadeIn
@@ -108,8 +98,12 @@
                 });
 
                 $(".detener_video").click(function(){
-                    $(this).fadeOut();
-                    $('#video_inicio')[0].stop();
+                    $('#play_ini').fadeIn("slow");
+                    $("#video_background").fadeIn("slow");
+                    $(".detener_video").fadeOut();
+                    $('#video_inicio').get(0).pause();
+                    $("#video_inicio").get(0).currentTime = 0;
+                    return false;
                 });
 
 /*ir a la seccion especifica seleccionando desde el menu*/
@@ -118,6 +112,7 @@
                     $('html, body').animate({
                         scrollTop: $("#inicio").offset().top
                     }, 1000);
+                    return false;
                 });
 
 
@@ -128,6 +123,7 @@
                     }, 1000,function(){
                         //$("#btn_historia").addClass("seleccionado");
                     });
+                    return false;
                 });
 
                 $("#btn_vinos").click(function() {
@@ -137,6 +133,7 @@
                     }, 1000,function(){
                         //$("#btn_vinos").addClass("seleccionado");
                     });
+                    return false;
                 });
 
                 $("#btn_tressesenta").click(function() {
@@ -146,6 +143,7 @@
                     }, 1000,function(){
                         //$("#btn_tressesenta").addClass("seleccionado");
                     });
+                    return false;
                 });
 
                 $("#btn_enoturismo").click(function() {
@@ -155,6 +153,7 @@
                     }, 1000,function(){
                         //$("#btn_enoturismo").addClass("seleccionado");
                     });
+                    return false;
                 });
 
                 $("#btn_contacto").click(function() {
@@ -164,6 +163,7 @@
                     }, 1000,function(){
                         //$("#btn_contacto").addClass("seleccionado");
                     });
+                    return false;
                 });
 
 /***********************/
