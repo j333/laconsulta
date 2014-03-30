@@ -90,7 +90,12 @@ em{
 }
 a:hover,
 a:active,
-a:focus{
+a:focus,
+button:hover,
+button:active,
+button:focus,
+input:focus,
+textarea:focus{
   outline:0
 }
 p a{
@@ -198,6 +203,9 @@ nav img{
 	background:transparent;
 	color:#fff;
 	margin:12px;
+}
+#showLeftPush:hover{
+	border:#fff solid thin;
 }
 .redes{
 	position:absolute;
@@ -374,13 +382,17 @@ nav img{
 	width:47%;
 	transition:.5s ease;
 }
+#vinos .col:hover{
+	-ms-transform: scale(.9);
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
+}
 #vinos .col:first-child{
 	margin-right:3%; 
 }
 #vinos strong{
 	font-family: 'Oswald', sans-serif;
 }
-
 #vinos > div img{
 	height:100%;
 	width:auto;
@@ -646,6 +658,56 @@ input[type="submit"]:hover,
 .section_modal p{
 	text-align:left;
 }
+.vino_modal{
+	background:transparent;
+}
+.vino_modal > div{
+	margin:0;
+	position:absolute;
+	top:0;
+	height:100%;
+	padding:50px 50px 10px 50px;
+	background:#000;
+	color:#fff;
+}
+.vino_modal > div strong{
+	font-family: "Oswald", sans-serif;
+	font-size:2.5em;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+.vino_modal > div > div{
+	border-top:#fff thin dotted;
+	margin-top:30px;
+}
+.vino_modal > div span{
+	font-family: "Oswald", sans-serif;
+	font-size:1.8em;
+	line-height:2.5em;
+	text-transform:uppercase;
+}
+.vino_modal > div ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.vino_modal > div li{
+	font-family: "Oswald", sans-serif;
+	display:inline-block;
+	margin:0;
+}
+.vino_modal > div li a{
+	font-size:1.5em;
+	text-decoration:none;
+	color:#666;
+	margin-right:20px;
+}
+.vino_modal > div li a:hover{
+	color:#fff;
+}
+#modal_varietal_1 > div{
+	right:0;
+}
 #a_modal_enoturismo{
 	position:relative;
 	background-color:#000;
@@ -681,24 +743,40 @@ input[type="submit"]:hover,
 	position:absolute;
 	top:50%;
 	left:50%;
-	margin-top:-230px;
 	margin-left:-400px;
+	margin-top:-210px;
+	overflow:hidden;
+}
+#check .col{
+	float:left;
 }
 #check img{
 	width:100%;
 	max-width:120px;
+	margin-bottom:50px;
 }
-#check h1{
-	font-size:7em;
+#check h2{
+	font-weight:300;
 	margin-top:.3em;
 	color:#fff;
 }
-#check .enfasis{
-	margin:-10px 0 40px;
+#check em{
+	font-family: 'Oswald', sans-serif;
+	font-size:1.5em;
+	margin:0 0 40px;
 }
 #check .btn{
 	font-size:1.8em;
 	padding:15px 30px;
+}
+#check .btn img{
+	width:16px;
+	margin-right:15px;
+	margin-left:-10px;
+	margin-bottom:5px;
+}
+#check .btn img,
+#check .btn span{
 }
 @media screen and (max-height: 26.375em){
 	.cbp-spmenu-vertical{
