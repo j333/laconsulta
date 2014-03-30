@@ -26,45 +26,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,100' rel='stylesheet' type='text/css'>
 
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-		<!--link rel="stylesheet" href="css/style.css" /-->
-
-		<style>
-			.no_hover{
-				-webkit-filter: blur(2px); 
-			    -moz-filter: blur(2px); 
-			    filter: blur(2px); 
-				filter:url(#blur-effect);
-				-ms-transform: scale(.9);
-				-webkit-transform: scale(.9);
-				transform: scale(.9);
-			}
-
-.section_modal{
-	width:100%;
-	height:100%;
-	position:fixed;
-	background:black;
-	top:0;
-	left:0;
-}
-.section_modal > div{
-	width:90%;
-	/*
-	position:absolute;
-	*/
-	max-width:600px !important;
-	background:#fff;
-	padding:20px 30px 20px 20px;
-    margin: 30px;
-    left:50%;
-	margin-left:-300px;
-	background:#fff;
-}
-#modal_enoturismo{
-	/*display:none;*/
-}
-		</style>
+		<link rel="stylesheet" href="css/style.css">
 
 		<script src="js/modernizr.custom.js"></script>
 	</head>
@@ -104,35 +66,17 @@
 				</section>
 
 				<section id="historia">
-					<!-- <img class="back" src="img/batalla.jpg" alt=""> -->
 					<div class="contenido">
 						<h1>Origen</h1>
                         <em class="enfasis">Nuestros vinos nacen como homenaje a un momento memorable en donde se gesto una hazaña de libertad.</em>
-                        
                         <div class="video_responsive">
                             <iframe src="//player.vimeo.com/video/88449990" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
-                        <!--
-                        <div class="col">
-                            <p>En 1816, el General San Martín, heroe y estratega en la historia Argentina, hace "La Consulta", un pregunta de espionaje al jefe aborigen para conocer el camino en el cruce de la Cordillera de los Andes y ayudar en la independencia de Chile. Este suceso le dio el nombre a esta región en el Valle de Uco, una de las regiones con el mejor vino de Argentina.</p>
-                            <img src="img/cruce.jpg" alt="">
-						</div>
-						<div class="col">
-                            <h2>Terruño</h2>
-							<p>Ubicado en el Valle de Uco, nuestros viñedos se encuentran en el departamento de San Carlos, distante aproximadamente a unos 100 km al sur de la ciudad de Mendoza, Argentina.</p>
-							<p>Un terruño de excelentes viñedos y paraiso natural al pie de la Cordillera de los Andes.</p>
-							<p>Sus suelos de textura arenosa y rocosa fina, pobres en materia orgánica y de baja capacidad de retención de humedad, permiten una producción de uva de alta calidad.</p>
-                            <h2>Marca</h2>
-							<p>Bajo la inspiración de un lugar con historia es que nacen nuestros vinos, los cuales intentan reflejar la pasión que se forjo en este lugar por las ideas de libertad.</p>
-                            <a href=""><img src="img/video-origen.jpg" alt=""></a>
-						</div>
-                        -->
 						<span class="clearboth"></span>
 					</div>
 				</section>
 
 				<section id="vinos">
-
 					<div id="reserva" class="col">
 						<strong>Reserva</strong>
 						<img src="img/La_Consulta_Reserva_CS.png" alt="">
@@ -162,18 +106,7 @@
 								</a>
 							</li>
 						</ul>
-						<div class="modal modal_reserva">
-							<a class="cerrar_modal" href="#">Cerrar</a>
-							<img src="img/La_Consulta_Reserva_CS.png" alt="">
-							<div>
-								<p><strong>modal reserva</strong></p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptatum, itaque voluptate omnis repellendus reprehenderit recusandae adipisci. Esse, voluptatem harum aliquam aliquid at molestias quas minima ea. Ad, enim, sequi!</p>
-								<p>Duis nec tempus odio. Etiam ut sem sed urna elementum luctus vel sollicitudin est. Ut id commodo ante. Maecenas quam nisi, faucibus et dictum ac, lobortis id mi. Nullam porttitor suscipit suscipit. Curabitur nec aliquet erat. Nulla ut velit neque. Nunc sit amet lorem vitae leo lobortis molestie. Curabitur enim odio, aliquam et ultrices sed, ullamcorper in magna. Donec posuere dignissim vulputate.</p>
-								<p>Sed lorem est, lacinia quis porttitor non, eleifend ornare sapien. In commodo tempor nibh, non fringilla lorem bibendum nec. Suspendisse tristique mauris tellus, quis vestibulum felis. Sed eu lacus ac nibh aliquam pharetra vel et nulla. Suspendisse odio lacus, ultricies ut dapibus eu, adipiscing sit amet nunc. Etiam ut nunc eget leo lacinia dapibus accumsan posuere sapien. Nullam non tortor eros.</p>
-							</div>
-						</div>
 					</div>
-
 					<div id="varietal" class="col">
 						<strong>Varietal</strong>
 						<img src="img/La_Consulta_Varietal_MB_tr.png" alt="">
@@ -215,33 +148,13 @@
 								</a>
 							</li>
 						</ul>
-						<div class="modal modal_varietal">
-							<a class="cerrar_modal" href="#">Cerrar</a>
-							<img src="img/La_Consulta_Reserva_CS.png" alt="">
-							<div>
-								<p><strong>modal varietal</strong></p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptatum, itaque voluptate omnis repellendus reprehenderit recusandae adipisci. Esse, voluptatem harum aliquam aliquid at molestias quas minima ea. Ad, enim, sequi!</p>
-								<p>Duis nec tempus odio. Etiam ut sem sed urna elementum luctus vel sollicitudin est. Ut id commodo ante. Maecenas quam nisi, faucibus et dictum ac, lobortis id mi. Nullam porttitor suscipit suscipit. Curabitur nec aliquet erat. Nulla ut velit neque. Nunc sit amet lorem vitae leo lobortis molestie. Curabitur enim odio, aliquam et ultrices sed, ullamcorper in magna. Donec posuere dignissim vulputate.</p>
-								<p>Sed lorem est, lacinia quis porttitor non, eleifend ornare sapien. In commodo tempor nibh, non fringilla lorem bibendum nec. Suspendisse tristique mauris tellus, quis vestibulum felis. Sed eu lacus ac nibh aliquam pharetra vel et nulla. Suspendisse odio lacus, ultricies ut dapibus eu, adipiscing sit amet nunc. Etiam ut nunc eget leo lacinia dapibus accumsan posuere sapien. Nullam non tortor eros.</p>
-								<p><a href="">Sed lorem est, lacinia quis porttitor non</a></p>
-							</div>
-						</div>
 					</div>
-
-					<svg>
-					    <filter id="blur-effect">
-					        <feGaussianBlur stdDeviation="2" />
-					    </filter>
-					</svg>
-
 				</section>
 
 				<section id="tressesenta">
-					<!-- <header> -->
 						<div class="contenido">
 							<h1>360 Sustentable</h1>
 						</div>
-					<!-- </header> -->
 					<div class="contenido">
                         <em class="enfasis">Haciendo ecos de los valores del general San Martín trabajamos con pasión y compromiso en acciones sustentables.</em>
 						<div class="col col-izq">
@@ -283,14 +196,10 @@
 					</div>
 				</section>
 
-				<span class="clearboth"></span>
-
 				<section id="enoturismo">
-					<!--<header>-->
 						<div class="contenido">
 							<h1>Enoturismo</h1>
 						</div>
-					<!--</header>-->
 					<div class="contenido">
 						<div class="col col-izq">
 							<form action="">
@@ -328,13 +237,12 @@
 							<p>A 100 kilómetros de la Ciudad de Mendoza, y rodeada de viñedos Posada La Celia invita a sus huéspedes a disfrutar del silencio y tranquilidad que acompañan al imponente paisaje de la Cordillera de los Andes. Elaboración de cortes de vinos, deporte aventura y otras actividades de recreación y relax son algunas de las propuestas para disfrutar en este paraje único.</p>
 							<p>Atesora una huerta de plantas aromáticas que abastece al restaurante y un viñedo escuela que replica a la finca, destinado a los visitantes.</p>
 							<p>Posee 5 habitaciones dobles ambientadas, con: Baño privado, Desayuno Buffet, Restaurante, Carta de sándwiches, Frigo Bar, TV satelital, Wi-Fi, Piscina descubierta, Bicicletas, Transfer desde Mendoza.</p>
-							<!--boton para prueba modal-->
 							<a id="a_modal_enoturismo" href="">
 								<strong>Actividades</strong>
 								<img src="img/byn.jpg" alt="">
 							</a>
 						</div>
-						<!--modal de prueba-->
+
 						<div id="modal_enoturismo" class="section_modal">
 							<div>
 								<a class="cerrar_modal" href="">x</a>
@@ -380,16 +288,12 @@
 										<h3>Bicicleta por los viñedos</h3>
 										<p>Posada La Celia cuenta con bicicletas para recorrer sus cálidos viñedos y disfrutar de los maravillosos senderos de la finca. Permitiendo al turista descansar contemplando el atardecer en nuestro reservorio o bosque de chañares.</p>	
 									</li>
-									<span class="clearboth"></span>
 								</ul>
 							</div>
 						</div>
-						<span class="clearboth"></span>
 					</div>
 				</section>
 
-
-				<span class="clearboth"></span>
 				<section id="contacto">
 					<div class="contenido">
 						<h1>Contacto</h1>
@@ -405,32 +309,13 @@
 								<p>T. +54 261 4134 400 / F. +54 261 4134 422</p>
 							</address>
 						</div>
-                        <!--
-						<div class="col col-izq">
-							<form action="">
-								<label for="nombre">Nombre</label>
-								<input id="nombre" name="nombre" type="text" placeholder="Nombre Apellido">
-								<label for="email">Email</label>
-								<input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com">
-								<label for="mensaje">Mensaje</label>
-								<textarea id="mensaje" name="mensaje"></textarea>
-								<input type="submit" value="Enviar">
-							</form>
-						</div>
-                        -->
 						<span class="clearboth"></span>
 					</div>
 				</section>
 			</main>
 		</div>
-		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/jquery-1.10.1.min.js"></script>
-		<!--script src="js/classie.js"></script>
-		<script src="js/jquery.windows.js"></script-->
-		<script src="js/jquery.mCustomScrollbar.min.js"></script>
-		<!--script src="js/scripts.js"></script-->
-		<script>
-			$("#modal_enoturismo").mCustomScrollbar();
-		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>
