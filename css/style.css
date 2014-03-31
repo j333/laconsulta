@@ -382,10 +382,21 @@ nav img{
 	width:47%;
 	transition:.5s ease;
 }
-#vinos .col:hover{
+#reserva, #varietal {
 	-ms-transform: scale(.9);
 	-webkit-transform: scale(.9);
 	transform: scale(.9);
+    -webkit-filter: blur(2px); 
+    -moz-filter: blur(2px); 
+    filter: blur(2px); 
+}
+#reserva:hover, #varietal:hover{
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+    -webkit-filter: blur(0px); 
+    -moz-filter: blur(0px); 
+    filter: blur(0px); 
 }
 #vinos .col:first-child{
 	margin-right:3%; 
