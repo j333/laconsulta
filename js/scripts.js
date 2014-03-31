@@ -58,7 +58,8 @@ $(document).ready(function(){
         $("#varietal img").removeClass("seleccionadoVariImg");
         $("#reserva strong").removeClass("seleccionadoResStrong");
         $("#reserva img").removeClass("seleccionadoResImg");
-        $(".vino_modal").fadeOut(0);
+        $(".vino_modal").fadeOut(0);    qw
+        
         $("body").css("overflow-y","auto");
         e.preventDefault();
     });
@@ -69,7 +70,7 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-    $("#modal_enoturismo .cerrar_modal,.section_modal").click(function(e){
+    $("#modal_enoturismo .cerrar_modal,#modal_enoturismo").click(function(e){
         $("#modal_enoturismo").fadeOut(0);
         $("body").css("overflow-y","auto");
         e.preventDefault();
