@@ -669,10 +669,27 @@ input[type="submit"]:hover,
 .section_modal p{
 	text-align:left;
 }
+/**************************/
 .vino_modal{
-	background:transparent;
+	background:#fff;
+	width:65%;
 }
-.vino_modal > div{
+.vino_modal .modal_imagen{
+	background:#fff;
+	width:30%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	max-width:none;
+}
+.vino_modal .modal_imagen img{
+	display:block;
+	max-height:none;
+	margin:0 auto;
+}
+.vino_modal .modal_descripcion{
+	width:70%;
 	margin:0;
 	position:absolute;
 	top:0;
@@ -680,45 +697,49 @@ input[type="submit"]:hover,
 	padding:50px 50px 10px 50px;
 	background:#000;
 	color:#fff;
+	max-width:none;
 }
-.vino_modal > div strong{
+.vino_modal .modal_descripcion strong{
 	font-family: "Oswald", sans-serif;
 	font-size:2.5em;
 	text-transform:uppercase;
 	font-weight:normal;
 }
-.vino_modal > div > div{
+.vino_modal .modal_descripcionv > div{
 	border-top:#fff thin dotted;
 	margin-top:30px;
 }
-.vino_modal > div span{
+.vino_modal .modal_descripcion span{
 	font-family: "Oswald", sans-serif;
 	font-size:1.8em;
 	line-height:2.5em;
 	text-transform:uppercase;
 }
-.vino_modal > div ul{
+.vino_modal .modal_descripcion ul{
 	list-style:none;
 	padding:0;
 	margin:0;
 }
-.vino_modal > div li{
+.vino_modal .modal_descripcion li{
 	font-family: "Oswald", sans-serif;
 	display:inline-block;
 	margin:0;
 }
-.vino_modal > div li a{
+.vino_modal .modal_descripcion li a{
 	font-size:1.5em;
 	text-decoration:none;
 	color:#666;
 	margin-right:20px;
 }
-.vino_modal > div li a:hover{
+.vino_modal .modal_descripcion li a:hover{
 	color:#fff;
 }
-#modal_varietal_1 > div{
+.section_modal.modal_varietal,
+.section_modal.modal_varietal .modal_descripcion{
 	right:0;
+	left:auto;
 }
+/**************************/
 #a_modal_enoturismo{
 	position:relative;
 	background-color:#000;

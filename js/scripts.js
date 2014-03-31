@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var anchoVentana = $(window).width();
 	var altoVentana = $(window).height();
 
-	$("#vinos .col > img").css("height", altoVentana -100);
+	$("#vinos .col > img,.modal_imagen img").css("height", altoVentana -100);
 
     $("#a_modal_enoturismo").click(function(e){
         $("#modal_enoturismo").fadeIn(0);
