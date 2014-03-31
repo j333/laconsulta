@@ -58,8 +58,7 @@ $(document).ready(function(){
         $("#varietal img").removeClass("seleccionadoVariImg");
         $("#reserva strong").removeClass("seleccionadoResStrong");
         $("#reserva img").removeClass("seleccionadoResImg");
-        $(".vino_modal").fadeOut(0);    qw
-        
+        $(".vino_modal").fadeOut(0);
         $("body").css("overflow-y","auto");
         e.preventDefault();
     });
