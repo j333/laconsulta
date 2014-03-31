@@ -382,13 +382,15 @@ nav img{
 	width:47%;
 	transition:.5s ease;
 }
-#reserva, #varietal {
+#reserva, #varietal{
 	-ms-transform: scale(.9);
 	-webkit-transform: scale(.9);
 	transform: scale(.9);
     -webkit-filter: blur(2px); 
     -moz-filter: blur(2px); 
-    filter: blur(2px); 
+    filter: blur(2px);
+    filter:url(#blur-effect);
+    filter: progid:DXImageTransform.Microsoft.blur(MakeShadow='false', PixelRadius='2',ShadowOpacity='0.75');
 }
 #reserva:hover, #varietal:hover{
 	-ms-transform: scale(1);
