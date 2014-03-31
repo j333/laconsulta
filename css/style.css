@@ -396,7 +396,7 @@ nav img{
 	transform: scale(1);
     -webkit-filter: blur(0px); 
     -moz-filter: blur(0px); 
-    filter: blur(0px); 
+    filter: blur(0px);
 }
 #vinos .col:first-child{
 	margin-right:3%; 
@@ -671,15 +671,15 @@ input[type="submit"]:hover,
 }
 /**************************/
 .vino_modal{
-	background:#fff;
+	background:#F9F9F9;
 	width:65%;
+	overflow:hidden;
 }
 .vino_modal .modal_imagen{
-	background:#fff;
+	background:#F9F9F9;
 	width:30%;
 	height:100%;
 	position:absolute;
-	left:0;
 	top:0;
 	max-width:none;
 }
@@ -699,13 +699,20 @@ input[type="submit"]:hover,
 	color:#fff;
 	max-width:none;
 }
+.vino_modal .modal_descripcion .cerrar_modal{
+	background:#000;
+}
+.vino_modal .modal_descripcion .cerrar_modal:hover{
+	background:#fff;
+	color:#000;
+}
 .vino_modal .modal_descripcion strong{
 	font-family: "Oswald", sans-serif;
 	font-size:2.5em;
 	text-transform:uppercase;
 	font-weight:normal;
 }
-.vino_modal .modal_descripcionv > div{
+.vino_modal .modal_descripcion > div{
 	border-top:#fff thin dotted;
 	margin-top:30px;
 }
@@ -734,10 +741,30 @@ input[type="submit"]:hover,
 .vino_modal .modal_descripcion li a:hover{
 	color:#fff;
 }
-.section_modal.modal_varietal,
-.section_modal.modal_varietal .modal_descripcion{
+.modal_reserva .modal_imagen{
+	left:0;
+}
+.vino_modal.modal_varietal{
+	width:60%;
+}
+.modal_varietal .modal_imagen{
+	right:0;
+}
+.section_modal.modal_reserva,
+.section_modal.modal_reserva .modal_descripcion{
 	right:0;
 	left:auto;
+}
+.section_modal.modal_varietal,
+.section_modal.modal_varietal .modal_descripcion{
+	left:0;
+	left:auto;
+}
+#modal_reserva_1,
+#modal_reserva_2,
+#modal_varietal_1,
+#modal_varietal_2{
+	display:none;
 }
 /**************************/
 #a_modal_enoturismo{

@@ -5,6 +5,44 @@ $(document).ready(function(){
 
 	$("#vinos .col > img,.modal_imagen img").css("height", altoVentana -100);
 
+    $("#abrir_modal_reserva_1").click(function(e){
+        $(".modal_reserva").fadeOut(0);
+        $("#modal_reserva_1").fadeIn(0);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $("body").css("overflow-y","hidden");
+        e.preventDefault();
+    });
+
+    $("#abrir_modal_reserva_2").click(function(e){
+        $(".modal_reserva").fadeOut(0);
+        $("#modal_reserva_2").fadeIn(0);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $("body").css("overflow-y","hidden");
+        e.preventDefault();
+    });
+
+    $("#abrir_modal_varietal_1").click(function(e){
+        $(".modal_varietal").fadeOut(0);
+        $("#modal_varietal_1").fadeIn(0);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $("body").css("overflow-y","hidden");
+        e.preventDefault();
+    });
+
+    $("#abrir_modal_varietal_2").click(function(e){
+        $(".modal_varietal").fadeOut(0);
+        $("#modal_varietal_2").fadeIn(0);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $("body").css("overflow-y","hidden");
+        e.preventDefault();
+    });
+
+    $(".vino_modal .cerrar_modal").click(function(e){
+        $(".vino_modal").fadeOut(0);
+        $("body").css("overflow-y","auto");
+        e.preventDefault();
+    });
+
     $("#a_modal_enoturismo").click(function(e){
         $("#modal_enoturismo").fadeIn(0);
         $("body").css("overflow-y","hidden");
@@ -97,8 +135,7 @@ $(document).ready(function(){
     $("#btn_vinos").click(function() {
         $('html, body').animate({
             scrollTop: $("#vinos").offset().top
-        }, 1000,function(){
-        });
+        }, 1000);
         return false;
     });
 
