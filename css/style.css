@@ -376,7 +376,9 @@ nav img{
 	min-height:100%;
 }
 #vinos .col{
-	width:47%;
+	/*width:47%;*/
+	margin:0 3%;
+	width:45.5%;
 	transition:.5s ease;
 }
 #reserva, #varietal{
@@ -398,7 +400,8 @@ nav img{
     filter: blur(0px);
 }
 #vinos .col:first-child{
-	margin-right:3%; 
+	/*margin-right:3%;*/
+	margin-right:0;
 }
 #vinos strong{
 	font-family: 'Oswald', sans-serif;
@@ -554,7 +557,7 @@ nav img{
 }
 form{
 	background:#fff;
-	padding:20px;
+	padding:20px 20px 0;
 	color:#000;
 }
 legend{
@@ -671,7 +674,7 @@ input[type="submit"]:hover,
 /**************************/
 .vino_modal{
 	background:#F9F9F9;
-	width:65%;
+	width:62.5%;
 	overflow:hidden;
 }
 .vino_modal .modal_imagen{
@@ -1050,4 +1053,12 @@ img.seleccionadoVariImg{
 	-webkit-transform: translateX(50px) rotateY(-90deg) !important;
 			transform: translateX(50px) rotateY(-90deg) !important;
 			background:transparent;
+}
+.seleccionado{
+	-ms-transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	transform: scale(1) !important;
+    -webkit-filter: blur(0px) !important; 
+    -moz-filter: blur(0px) !important; 
+    filter: blur(0px) !important;
 }

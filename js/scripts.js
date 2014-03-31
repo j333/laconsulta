@@ -5,55 +5,68 @@ $(document).ready(function(){
 
 	$("#vinos .col > img,.modal_imagen img").css("height", altoVentana -100);
 
-    $("#abrir_modal_reserva_1").click(function(e){
+    window.onresize = function() {
+        altoVentana = $(window).height();
+        $("#vinos .col > img,.modal_imagen img").css("height", altoVentana -100);
+    }
+
+    var formHeight = $("#enoturismo .col.col-der").height();
+    $("#enoturismo .col.col-izq form").height(formHeight-18);
+
+    function funcionesComunesVinos(){
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
+        $("body").css("overflow-y","hidden");
+    }
+    function funcionesComunesVinosReserva(){
+        $("#reserva").removeClass("seleccionado");
+        $("#reserva").addClass("seleccionado");
         $("#reserva strong").removeClass("seleccionadoResStrong");
         $("#reserva img").removeClass("seleccionadoResImg");
         $(this).find('strong').addClass("seleccionadoResStrong");
         $(this).find('img').addClass("seleccionadoResImg");
         $(".modal_reserva").fadeOut(0);
+    }
+    function funcionesComunesVinosVarietal(){
+        $("#varietal").removeClass("seleccionado");
+        $("#varietal").addClass("seleccionado");
+        $("#varietal strong").removeClass("seleccionadoVariStrong");
+        $("#varietal img").removeClass("seleccionadoVariImg");
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
+        $(".modal_varietal").fadeOut(0);
+    }
+
+    $("#abrir_modal_reserva_1").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosReserva();
         $("#modal_reserva_1").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
-        $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $("#abrir_modal_reserva_2").click(function(e){
-        $("#reserva strong").removeClass("seleccionadoResStrong");
-        $("#reserva img").removeClass("seleccionadoResImg");
-        $(this).find('strong').addClass("seleccionadoResStrong");
-        $(this).find('img').addClass("seleccionadoResImg");
-        $(".modal_reserva").fadeOut(0);
+        funcionesComunesVinos();
+        funcionesComunesVinosReserva();
         $("#modal_reserva_2").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
-        $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $("#abrir_modal_varietal_1").click(function(e){
-        $("#varietal strong").removeClass("seleccionadoVariStrong");
-        $("#varietal img").removeClass("seleccionadoVariImg");
-        $(this).find('strong').addClass("seleccionadoVariStrong");
-        $(this).find('img').addClass("seleccionadoVariImg");
-        $(".modal_varietal").fadeOut(0);
+        funcionesComunesVinos();
+        funcionesComunesVinosVarietal();
         $("#modal_varietal_1").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
-        $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $("#abrir_modal_varietal_2").click(function(e){
-        $("#varietal strong").removeClass("seleccionadoVariStrong");
-        $("#varietal img").removeClass("seleccionadoVariImg");
-        $(this).find('strong').addClass("seleccionadoVariStrong");
-        $(this).find('img').addClass("seleccionadoVariImg");
-        $(".modal_varietal").fadeOut(0);
+        funcionesComunesVinos();
+        funcionesComunesVinosVarietal();
         $("#modal_varietal_2").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
-        $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $(".vino_modal .cerrar_modal").click(function(e){
+        $("#reserva").removeClass("seleccionado");
+        $("#varietal").removeClass("seleccionado");
         $("#varietal strong").removeClass("seleccionadoVariStrong");
         $("#varietal img").removeClass("seleccionadoVariImg");
         $("#reserva strong").removeClass("seleccionadoResStrong");
