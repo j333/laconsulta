@@ -131,9 +131,6 @@ p a:hover{
 #btn_inicio:hover{
 	background:#fff;
 }
-.seleccionado{
-	background:#999;
-}
 .cbp-spmenu-vertical{
 	width: 240px;
 	height: 100%;
@@ -389,8 +386,8 @@ nav img{
     -webkit-filter: blur(2px); 
     -moz-filter: blur(2px); 
     filter: blur(2px);
-    filter:url(#blur-effect);
-    filter: progid:DXImageTransform.Microsoft.blur(MakeShadow='false', PixelRadius='2',ShadowOpacity='0.75');
+    /*filter:url(#blur-effect);
+    filter: progid:DXImageTransform.Microsoft.blur(MakeShadow='false', PixelRadius='2',ShadowOpacity='0.75');*/
 }
 #reserva:hover, #varietal:hover{
 	-ms-transform: scale(1);
@@ -1031,4 +1028,26 @@ input[type="submit"]:hover,
 			transform: translateX(5px) rotateY(0deg);
 	-webkit-transition-delay: .3s;
 			transition-delay: .3s;
+}
+
+/*******************************/
+
+strong.seleccionadoResStrong{
+	-webkit-transform: translateX(0px) rotateY(0deg) !important;
+			transform: translateX(0px) rotateY(0deg) !important;
+}
+img.seleccionadoResImg{
+	-webkit-transform: translateX(50px) rotateY(-90deg) !important;
+			transform: translateX(50px) rotateY(-90deg) !important;
+}
+
+strong.seleccionadoVariStrong{
+	-webkit-transform: translateX(5px) rotateY(0deg) !important;
+			transform: translateX(5px) rotateY(0deg) !important;
+			background:transparent;
+}
+img.seleccionadoVariImg{
+	-webkit-transform: translateX(50px) rotateY(-90deg) !important;
+			transform: translateX(50px) rotateY(-90deg) !important;
+			background:transparent;
 }

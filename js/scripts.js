@@ -6,38 +6,58 @@ $(document).ready(function(){
 	$("#vinos .col > img,.modal_imagen img").css("height", altoVentana -100);
 
     $("#abrir_modal_reserva_1").click(function(e){
+        $("#reserva strong").removeClass("seleccionadoResStrong");
+        $("#reserva img").removeClass("seleccionadoResImg");
+        $(this).find('strong').addClass("seleccionadoResStrong");
+        $(this).find('img').addClass("seleccionadoResImg");
         $(".modal_reserva").fadeOut(0);
         $("#modal_reserva_1").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
         $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $("#abrir_modal_reserva_2").click(function(e){
+        $("#reserva strong").removeClass("seleccionadoResStrong");
+        $("#reserva img").removeClass("seleccionadoResImg");
+        $(this).find('strong').addClass("seleccionadoResStrong");
+        $(this).find('img').addClass("seleccionadoResImg");
         $(".modal_reserva").fadeOut(0);
         $("#modal_reserva_2").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
         $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $("#abrir_modal_varietal_1").click(function(e){
+        $("#varietal strong").removeClass("seleccionadoVariStrong");
+        $("#varietal img").removeClass("seleccionadoVariImg");
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
         $(".modal_varietal").fadeOut(0);
         $("#modal_varietal_1").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
         $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $("#abrir_modal_varietal_2").click(function(e){
+        $("#varietal strong").removeClass("seleccionadoVariStrong");
+        $("#varietal img").removeClass("seleccionadoVariImg");
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
         $(".modal_varietal").fadeOut(0);
         $("#modal_varietal_2").fadeIn(0);
-        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 250);
+        $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
         $("body").css("overflow-y","hidden");
         e.preventDefault();
     });
 
     $(".vino_modal .cerrar_modal").click(function(e){
+        $("#varietal strong").removeClass("seleccionadoVariStrong");
+        $("#varietal img").removeClass("seleccionadoVariImg");
+        $("#reserva strong").removeClass("seleccionadoResStrong");
+        $("#reserva img").removeClass("seleccionadoResImg");
         $(".vino_modal").fadeOut(0);
         $("body").css("overflow-y","auto");
         e.preventDefault();
