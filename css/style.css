@@ -99,7 +99,7 @@ textarea:focus{
   outline:0
 }
 p a{
-	color:#E53B2C;
+	color:#C01000;
 	text-decoration:none;
 }
 p a:hover{
@@ -419,7 +419,7 @@ nav img{
 	position:absolute;
 	width:100%;
 	display:block;
-	color:#E53B2C;
+	color:#C01000;
 	text-transform:uppercase;
 	font-size:24px;
 }
@@ -602,8 +602,8 @@ input[type="submit"],
 }
 input[type="submit"]:hover,
 #check .btn:hover{
-	background:#e53b2c;
-	border-color:#e53b2c;
+	background:#C01000;
+	border-color: #C01000;
 	color:#fff;
 }
 .enfasis{
@@ -733,8 +733,9 @@ input[type="submit"]:hover,
 }
 #check{
 	text-align:center;
-	background:url(../img/back_other.jpg);
+	background:url(../img/back_other.gif);
 	background-size:30%;
+    background-position: 50% 50%;
 }
 #check main{
 	padding:0;
@@ -749,6 +750,7 @@ input[type="submit"]:hover,
 }
 #check .col{
 	float:left;
+    width: 50%;
 }
 #check img{
 	width:100%;
@@ -758,11 +760,10 @@ input[type="submit"]:hover,
 #check h2{
 	font-weight:300;
 	margin-top:.3em;
-	color:#fff;
 }
 #check em{
 	font-family: 'Oswald', sans-serif;
-	font-size:1.5em;
+	font-size:1em;
 	margin:0 0 40px;
 }
 #check .btn{
