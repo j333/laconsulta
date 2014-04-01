@@ -40,6 +40,7 @@ $(document).ready(function(){
         funcionesComunesVinos();
         funcionesComunesVinosReserva();
         $("#modal_reserva_1").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CS_1.jpg");
         e.preventDefault();
     });
 
@@ -47,6 +48,7 @@ $(document).ready(function(){
         funcionesComunesVinos();
         funcionesComunesVinosReserva();
         $("#modal_reserva_2").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CS_2.jpg");
         e.preventDefault();
     });
 
@@ -54,6 +56,7 @@ $(document).ready(function(){
         funcionesComunesVinos();
         funcionesComunesVinosVarietal();
         $("#modal_varietal_1").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_MB_tr_1.jpg");
         e.preventDefault();
     });
 
@@ -61,10 +64,13 @@ $(document).ready(function(){
         funcionesComunesVinos();
         funcionesComunesVinosVarietal();
         $("#modal_varietal_2").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_MB_tr_2.jpg");
         e.preventDefault();
     });
 
     $(".vino_modal .cerrar_modal").click(function(e){
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_MB_tr.jpg");
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CS.jpg");
         $("#reserva").removeClass("seleccionado");
         $("#varietal").removeClass("seleccionado");
         $("#varietal strong").removeClass("seleccionadoVariStrong");

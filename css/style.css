@@ -673,13 +673,13 @@ input[type="submit"]:hover,
 }
 /**************************/
 .vino_modal{
-	background:#F9F9F9;
+	background:transparent;
 	width:62.5%;
 	overflow:hidden;
 }
 .vino_modal .modal_imagen{
 	background:#F9F9F9;
-	width:30%;
+	width:25%;
 	height:100%;
 	position:absolute;
 	top:0;
@@ -691,7 +691,7 @@ input[type="submit"]:hover,
 	margin:0 auto;
 }
 .vino_modal .modal_descripcion{
-	width:70%;
+	width:75%;
 	margin:0;
 	position:absolute;
 	top:0;
