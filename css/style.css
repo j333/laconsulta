@@ -714,6 +714,9 @@ input[type="submit"]:hover,
 	text-transform:uppercase;
 	font-weight:normal;
 }
+.vino_modal .modal_descripcion > img{
+	display:none;
+}
 .vino_modal .modal_descripcion > div{
 	border-top:#fff thin dotted;
 	margin-top:30px;
@@ -767,6 +770,91 @@ input[type="submit"]:hover,
 #modal_varietal_1,
 #modal_varietal_2{
 	display:none;
+}
+#mostrar_vinos{
+	display:block;
+	position:absolute;
+	width:60px;
+	height:60px;
+	top:0;
+	left:100px;
+	background:yellow;
+}
+#vinos > div ul img{
+	-webkit-transform: translateX(0px) rotateY(0deg);
+			transform: translateX(0px) rotateY(0deg);
+	-webkit-transition:all .5s ease-in-out;			
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: .2s;
+			transition-delay: .2s;
+}
+#vinos > div li:hover img{
+	-webkit-transform: translateX(-50px) rotateY(90deg);
+			transform: translateX(-50px) rotateY(90deg);
+}
+#vinos > div ul strong{
+	-webkit-transform: translateX(100px) rotateY(90deg);
+			transform: translateX(100px) rotateY(90deg);
+	-webkit-transition:all .5s ease-in-out;
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: 0s;
+			transition-delay: 0s;
+}
+#vinos > div li:hover strong{
+	-webkit-transform: translateX(0px) rotateY(0deg);
+			transform: translateX(0px) rotateY(0deg);
+	-webkit-transition-delay: .3s;
+			transition-delay: .3s;
+}
+#vinos #varietal ul img{
+	-webkit-transform: translateX(0px) rotateY(0deg);
+			transform: translateX(0px) rotateY(0deg);
+	-webkit-transition:all .5s ease-in-out;			
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: .2s;
+			transition-delay: .2s;
+}
+#vinos #varietal li:hover img{
+	-webkit-transform: translateX(50px) rotateY(-90deg);
+			transform: translateX(50px) rotateY(-90deg);
+}
+#vinos #varietal ul strong{
+	-webkit-transform: translateX(-100px) rotateY(-90deg);
+			transform: translateX(-100px) rotateY(-90deg);
+	-webkit-transition:all .5s ease-in-out;
+			transition:all .5s ease-in-out;
+	-webkit-transition-delay: 0s;
+			transition-delay: 0s;
+}
+#vinos #varietal li:hover strong{
+	-webkit-transform: translateX(5px) rotateY(0deg);
+			transform: translateX(5px) rotateY(0deg);
+	-webkit-transition-delay: .3s;
+			transition-delay: .3s;
+}
+.seleccionadoResStrong{
+	-webkit-transform: translateX(0px) rotateY(0deg) !important;
+			transform: translateX(0px) rotateY(0deg) !important;
+}
+.seleccionadoResImg{
+	-webkit-transform: translateX(-50px) rotateY(90deg) !important;
+			transform: translateX(-50px) rotateY(90deg) !important;
+}
+.seleccionadoVariStrong{
+	-webkit-transform: translateX(5px) rotateY(0deg) !important;
+			transform: translateX(5px) rotateY(0deg) !important;
+}
+.seleccionadoVariImg{
+	-webkit-transform: translateX(50px) rotateY(-90deg) !important;
+			transform: translateX(50px) rotateY(-90deg) !important;
+}
+.seleccionado{
+	-ms-transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	transform: scale(1) !important;
+    -webkit-filter: blur(0px) !important; 
+    -moz-filter: blur(0px) !important; 
+    filter: blur(0px) !important;
 }
 /**************************/
 #a_modal_enoturismo{
@@ -895,13 +983,15 @@ input[type="submit"]:hover,
 	#vinos strong + img{
 		display:none;
 	}
+	/*
 	#vinos li:hover,
 	#vinos li:active{
 		background:#000;
 	}
+	*/
 	#vinos li:hover strong,
 	#vinos li:active strong{
-		color:#fff;
+		color:#000;
 	}
 	#vinos li a:hover img{
 		opacity:1;
@@ -910,11 +1000,16 @@ input[type="submit"]:hover,
 		float:left;
 		margin:0 20px 0 10px;
 	}
+	#vinos #reserva li img{
+		float:right;
+	}
+	#vinos #reserva li strong{
+		text-align:right;
+	}
 	#vinos li{
 		margin:0;
 		width:90%;
 		display:block;
-		padding:20px 0;
 		border-bottom:#000 dotted thin;
 	}
 	#vinos ul li:last-child{
@@ -929,11 +1024,49 @@ input[type="submit"]:hover,
 	#vinos > div ul strong{
 		opacity:1;
 	}
+	#vinos > div ul a{
+		width:100%;
+		padding:30px 0;
+	}
 	#reserva ul strong{
 		text-align:left;
 	}
 	#varietal{
 		margin-top:50px;
+	}
+	/**/
+	.vino_modal .modal_descripcion > img{
+		display:block;
+		margin:30px 0;
+	}
+	#reserva,
+	#varietal,
+	#vinos > div ul img,
+	#vinos > div ul strong,
+	#vinos #varietal ul img,
+	#vinos #varietal ul strong,
+	#vinos > div li:hover img,
+	#vinos > div li:hover strong,
+	#vinos #varietal li:hover img,
+	#vinos #varietal li:hover strong{
+		-webkit-transform: translateX(0px) rotateY(0deg);
+				transform: translateX(0px) rotateY(0deg);
+		-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+				transform: scale(1);
+	    -webkit-filter: blur(0px); 
+	       -moz-filter: blur(0px); 
+	    		filter: blur(0px);
+		-webkit-transition:all 0s ease-in-out;			
+				transition:all 0s ease-in-out;
+		-webkit-transition-delay: 0s;
+				transition-delay: 0s;
+	}
+	.vino_modal,
+	.vino_modal .modal_descripcion,
+	.vino_modal.modal_varietal{
+		width:100%;
+		left:0;
 	}
 }
 @media screen and (max-width: 640px){
@@ -968,97 +1101,4 @@ input[type="submit"]:hover,
 	#vinos li strong{
 		margin-left:10px;
 	}
-}
-#mostrar_vinos{
-	display:block;
-	position:absolute;
-	width:60px;
-	height:60px;
-	top:0;
-	left:100px;
-	background:yellow;
-}
-
-#vinos > div ul img{
-	-webkit-transform: translateX(0px) rotateY(0deg);
-			transform: translateX(0px) rotateY(0deg);
-	-webkit-transition:all .5s ease-in-out;			
-			transition:all .5s ease-in-out;
-	-webkit-transition-delay: .2s;
-			transition-delay: .2s;
-}
-#vinos > div li:hover img{
-	-webkit-transform: translateX(-50px) rotateY(90deg);
-			transform: translateX(-50px) rotateY(90deg);
-}
-#vinos > div ul strong{
-	-webkit-transform: translateX(100px) rotateY(90deg);
-			transform: translateX(100px) rotateY(90deg);
-	-webkit-transition:all .5s ease-in-out;
-			transition:all .5s ease-in-out;
-	-webkit-transition-delay: 0s;
-			transition-delay: 0s;
-}
-#vinos > div li:hover strong{
-	-webkit-transform: translateX(0px) rotateY(0deg);
-			transform: translateX(0px) rotateY(0deg);
-	-webkit-transition-delay: .3s;
-			transition-delay: .3s;
-}
-
-#vinos #varietal ul img{
-	-webkit-transform: translateX(0px) rotateY(0deg);
-			transform: translateX(0px) rotateY(0deg);
-	-webkit-transition:all .5s ease-in-out;			
-			transition:all .5s ease-in-out;
-	-webkit-transition-delay: .2s;
-			transition-delay: .2s;
-}
-#vinos #varietal li:hover img{
-	-webkit-transform: translateX(50px) rotateY(-90deg);
-			transform: translateX(50px) rotateY(-90deg);
-}
-#vinos #varietal ul strong{
-	-webkit-transform: translateX(-100px) rotateY(-90deg);
-			transform: translateX(-100px) rotateY(-90deg);
-	-webkit-transition:all .5s ease-in-out;
-			transition:all .5s ease-in-out;
-	-webkit-transition-delay: 0s;
-			transition-delay: 0s;
-}
-#vinos #varietal li:hover strong{
-	-webkit-transform: translateX(5px) rotateY(0deg);
-			transform: translateX(5px) rotateY(0deg);
-	-webkit-transition-delay: .3s;
-			transition-delay: .3s;
-}
-
-/*******************************/
-
-strong.seleccionadoResStrong{
-	-webkit-transform: translateX(0px) rotateY(0deg) !important;
-			transform: translateX(0px) rotateY(0deg) !important;
-}
-img.seleccionadoResImg{
-	-webkit-transform: translateX(50px) rotateY(-90deg) !important;
-			transform: translateX(50px) rotateY(-90deg) !important;
-}
-
-strong.seleccionadoVariStrong{
-	-webkit-transform: translateX(5px) rotateY(0deg) !important;
-			transform: translateX(5px) rotateY(0deg) !important;
-			background:transparent;
-}
-img.seleccionadoVariImg{
-	-webkit-transform: translateX(50px) rotateY(-90deg) !important;
-			transform: translateX(50px) rotateY(-90deg) !important;
-			background:transparent;
-}
-.seleccionado{
-	-ms-transform: scale(1) !important;
-	-webkit-transform: scale(1) !important;
-	transform: scale(1) !important;
-    -webkit-filter: blur(0px) !important; 
-    -moz-filter: blur(0px) !important; 
-    filter: blur(0px) !important;
 }
