@@ -44,43 +44,113 @@ $(document).ready(function(){
         $(".modal_varietal").fadeOut(0);
     }
 
-    $("#abrir_modal_reserva_1").click(function(e){
+    $("#abrir_modal_reserva_mb").click(function(e){
         funcionesComunesVinos();
         funcionesComunesVinosReserva();
         $(this).find('strong').addClass("seleccionadoResStrong");
         $(this).find('img').addClass("seleccionadoResImg");
-        $("#modal_reserva_1").fadeIn(0);
-        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CS_1.jpg");
+        $("#modal_reserva_mb").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_MB.jpg");
         e.preventDefault();
     });
 
-    $("#abrir_modal_reserva_2").click(function(e){
+    $("#abrir_modal_reserva_cs").click(function(e){
         funcionesComunesVinos();
         funcionesComunesVinosReserva();
         $(this).find('strong').addClass("seleccionadoResStrong");
         $(this).find('img').addClass("seleccionadoResImg");
-        $("#modal_reserva_2").fadeIn(0);
-        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CS_2.jpg");
+        $("#modal_reserva_cs").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CS.jpg");
+        e.preventDefault();
+    });
+    
+    $("#abrir_modal_reserva_mb").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosReserva();
+        $(this).find('strong').addClass("seleccionadoResStrong");
+        $(this).find('img').addClass("seleccionadoResImg");
+        $("#modal_reserva_mb").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_MB.jpg");
         e.preventDefault();
     });
 
-    $("#abrir_modal_varietal_1").click(function(e){
+    $("#abrir_modal_reserva_to").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosReserva();
+        $(this).find('strong').addClass("seleccionadoResStrong");
+        $(this).find('img').addClass("seleccionadoResImg");
+        $("#modal_reserva_to").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_TO.jpg");
+        e.preventDefault();
+    });
+    
+    $("#abrir_modal_reserva_ch").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosReserva();
+        $(this).find('strong').addClass("seleccionadoResStrong");
+        $(this).find('img').addClass("seleccionadoResImg");
+        $("#modal_reserva_ch").fadeIn(0);
+        $("#reserva > img").attr("src","img/La_Consulta_Reserva_CH.jpg");
+        e.preventDefault();
+    });
+
+    $("#abrir_modal_varietal_mb").click(function(e){
         funcionesComunesVinos();
         funcionesComunesVinosVarietal();
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
-        $("#modal_varietal_1").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_Varietal_MB_tr_1.jpg");
+        $("#modal_varietal_mb").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_MB.jpg");
         e.preventDefault();
     });
 
-    $("#abrir_modal_varietal_2").click(function(e){
+    $("#abrir_modal_varietal_cs").click(function(e){
         funcionesComunesVinos();
         funcionesComunesVinosVarietal();
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
-        $("#modal_varietal_2").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_Varietal_MB_tr_2.jpg");
+        $("#modal_varietal_cs").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_CS.jpg");
+        e.preventDefault();
+    });
+    
+        $("#abrir_modal_varietal_ro").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosVarietal();
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
+        $("#modal_varietal_ro").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_RO.jpg");
+        e.preventDefault();
+    });
+
+    $("#abrir_modal_varietal_ch").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosVarietal();
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
+        $("#modal_varietal_ch").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_CH.jpg");
+        e.preventDefault();
+    });
+    
+        $("#abrir_modal_varietal_pg").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosVarietal();
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
+        $("#modal_varietal_pg").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_PG.jpg");
+        e.preventDefault();
+    });
+
+    $("#abrir_modal_varietal_to").click(function(e){
+        funcionesComunesVinos();
+        funcionesComunesVinosVarietal();
+        $(this).find('strong').addClass("seleccionadoVariStrong");
+        $(this).find('img').addClass("seleccionadoVariImg");
+        $("#modal_varietal_to").fadeIn(0);
+        $("#varietal > img").attr("src","img/La_Consulta_TO.jpg");
         e.preventDefault();
     });
 
