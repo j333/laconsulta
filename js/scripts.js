@@ -100,7 +100,7 @@ $(document).ready(function(){
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
         $("#modal_varietal_mb").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_MB.jpg");
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_MB_tr.jpg");
         e.preventDefault();
     });
 
@@ -110,7 +110,7 @@ $(document).ready(function(){
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
         $("#modal_varietal_cs").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_CS.jpg");
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_CS_tr.jpg");
         e.preventDefault();
     });
     
@@ -120,7 +120,7 @@ $(document).ready(function(){
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
         $("#modal_varietal_ro").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_RO.jpg");
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_RO_tr.jpg");
         e.preventDefault();
     });
 
@@ -130,7 +130,7 @@ $(document).ready(function(){
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
         $("#modal_varietal_ch").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_CH.jpg");
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_CH_tr.jpg");
         e.preventDefault();
     });
     
@@ -140,7 +140,7 @@ $(document).ready(function(){
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
         $("#modal_varietal_pg").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_PG.jpg");
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_PG_tr.jpg");
         e.preventDefault();
     });
 
@@ -150,7 +150,7 @@ $(document).ready(function(){
         $(this).find('strong').addClass("seleccionadoVariStrong");
         $(this).find('img').addClass("seleccionadoVariImg");
         $("#modal_varietal_to").fadeIn(0);
-        $("#varietal > img").attr("src","img/La_Consulta_TO.jpg");
+        $("#varietal > img").attr("src","img/La_Consulta_Varietal_TO_tr.jpg");
         e.preventDefault();
     });
 
