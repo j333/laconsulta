@@ -235,6 +235,7 @@ nav img{
 #inicio{
 	padding:0;
 	height:100%;
+    background-color: #000;
 }
 #play_ini{
 	display:block;
