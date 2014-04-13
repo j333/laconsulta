@@ -340,6 +340,9 @@ nav img{
 	padding-right:0;
 	padding-left:20px;
 }
+#modal_enoturismo li, #modal_enoturismo h2 {
+text-align: center;
+}
 #historia{
 	height:auto;
 }
