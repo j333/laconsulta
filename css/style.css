@@ -712,25 +712,28 @@ input[type="submit"]:hover,
 	background:#fff;
 	color:#000;
 }
-.vino_modal .modal_descripcion strong{
+.vino_modal .modal_descripcion h2{
 	font-family: "Oswald", sans-serif;
 	font-size:2.5em;
 	text-transform:uppercase;
 	font-weight:normal;
+    color: #fff;
 }
-.vino_modal .modal_descripcion > img{
-	display:none;
-}
-.vino_modal .modal_descripcion > div{
-	border-top:#fff thin dotted;
-	margin-top:30px;
-}
-.vino_modal .modal_descripcion span{
+.vino_modal .modal_descripcion h3{
 	font-family: "Oswald", sans-serif;
 	font-size:1.8em;
 	line-height:2.5em;
 	text-transform:uppercase;
+    color: #fff;
 }
+.vino_modal .modal_descripcion strong{
+	text-transform:uppercase;
+    color: #fff;
+}
+.vino_modal .modal_descripcion > img{
+	display:none;
+}
+
 .vino_modal .modal_descripcion ul{
 	list-style:none;
 	padding:0;
