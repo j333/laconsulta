@@ -3,6 +3,23 @@ $(document).ready(function(){
 	var anchoVentana = $(window).width();
 	var altoVentana = $(window).height();
 
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+    showLeftPush = document.getElementById( 'showLeftPush' ),
+    body = document.body;
+    showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+        $(".vino_modal .cerrar_modal").click();
+    };
+
+    function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+            classie.toggle( showLeftPush, 'disabled' );
+        }
+    }
+
 	$("#vinos .col > img,.modal_imagen img").css("height", altoVentana -100);
 
     window.onresize = function() {
@@ -14,11 +31,18 @@ $(document).ready(function(){
     $("#enoturismo .col.col-izq form").height(formHeight-18);
 
     function funcionesComunesVinos(){
+
+        classie.remove( showLeftPush, 'active' );
+        classie.remove( body, 'cbp-spmenu-push-toright' );
+        classie.remove( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+
         if(anchoVentana > 768){
             $('html,body').animate({scrollTop: $("#vinos").offset().top}, 500);
         }
         $("body").css("overflow-y","hidden");
     }
+
     function funcionesComunesVinosReserva(){
         $("#reserva").removeClass("seleccionado");
         $("#reserva").addClass("seleccionado");
@@ -31,6 +55,7 @@ $(document).ready(function(){
 
         $(".modal_reserva").fadeOut(0);
     }
+
     function funcionesComunesVinosVarietal(){
         $("#varietal").removeClass("seleccionado");
         $("#varietal").addClass("seleccionado");
@@ -287,21 +312,5 @@ $(document).ready(function(){
         });
         return false;
     });
-
-    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-    showLeftPush = document.getElementById( 'showLeftPush' ),
-    body = document.body;
-    showLeftPush.onclick = function() {
-        classie.toggle( this, 'active' );
-        classie.toggle( body, 'cbp-spmenu-push-toright' );
-        classie.toggle( menuLeft, 'cbp-spmenu-open' );
-        disableOther( 'showLeftPush' );
-    };
-
-    function disableOther( button ) {
-        if( button !== 'showLeftPush' ) {
-            classie.toggle( showLeftPush, 'disabled' );
-        }
-    }
 
 });
